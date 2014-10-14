@@ -1,0 +1,31 @@
+.carousel-jumbotron {
+    padding: 30px 15%;
+    color: inherit;
+    background-color: #eee;
+}
+.carousel-jumbotron h1,
+.carousel-jumbotron .h1 {
+    color: inherit;
+}
+.carousel-jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 200;
+}
+.carousel-jumbotron > hr {
+    border-top-color: #d5d5d5;
+}
+.carousel-jumbotron .container {
+    max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel-jumbotron {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+    .carousel-jumbotron h1,
+    .carousel-jumbotron .h1 {
+        font-size: 63px;
+    }
+}
