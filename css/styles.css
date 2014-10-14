@@ -1,5 +1,41 @@
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  /* Set the fixed height of the footer here (set to be same as header) */
+  height: 40px;
+}
+.footer .container {
+    margin-top: 10px;
+}
+.header,
+.footer {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+.header {
+    height: 80px;
+}
+.header ul {
+    margin-top: 20px;
+}
+.content .container {
+    margin-top: 40px;
+}
+/* Carousel styles
+-------------------------------------------------- */
 .carousel-jumbotron {
-    padding: 30px 15%;
+    min-height: 340px;
+    padding: 30px 30%;
     color: inherit;
     background-color: #eee;
 }

@@ -6,17 +6,24 @@
         {% include css.html %}
     </head>
     <body role="document" style="zoom: 1;">
-        <div class="container">
-            <div class="header">
+        <div class="header">
+            <div class="container">
                 {% include header.html %}
             </div>
-            <div class="content">
+        </div>
+        <div class="content">
+            <div class="container">
                 {{ content }}
             </div>
-            <div class="footer">
+        </div>
+        <div class="footer">
+            <div class="container">
+                {% include footer.html %}
             </div>
         </div>
         {% include scripts.html %}
-        {{ page-specific-scripts }}
+        {% for script in page.page_specific_scripts %}
+            <script src="{{ site.baseurl }}/js/{{ script }}"></script>
+        {% endfor %}
     </body>
 </html>
