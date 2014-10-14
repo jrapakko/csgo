@@ -13,6 +13,7 @@ body {
   bottom: 0;
   /* Set the fixed height of the footer here (set to be same as header) */
   height: 40px;
+  border-top: 1px solid #e5e5e5;
 }
 .footer .container {
     margin-top: 10px;
@@ -24,6 +25,7 @@ body {
 }
 .header {
     height: 80px;
+    border-bottom: 1px solid #e5e5e5;
 }
 .header ul {
     margin-top: 20px;
