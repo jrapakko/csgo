@@ -1,2 +1,1 @@
-source: ./src
-destination: ./_site
+baseurl: /csgo
