@@ -5,3 +5,24 @@ nav_title: "Launch Options"
 nav_url: "/launch-opts/"
 nav_weight: 2
 ---
+<table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Launch Option</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for launchopt in site.data.launchopts %}
+            <tr>
+                <td class="nowrap">
+                    {%for opt in launchopt.opts %}
+                        <div><code>{{ opt }}</code></div>
+                    {% endfor %}
+                </td>
+                <td>{{ launchopt.desc }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+    

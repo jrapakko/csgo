@@ -67,3 +67,9 @@ body {
         font-size: 63px;
     }
 }
+/* Launch Opt Styles (Table)
+-------------------------------------------------- */
+td.nowrap {
+    white-space: nowrap;
+    min-width: 180px;
+}

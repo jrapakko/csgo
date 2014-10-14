@@ -1,0 +1,52 @@
+- opts: ["-console"]
+  desc: "Automatically opens the console on launch (Useful to verify autoexec has run, if the autoexec echos after having run)"
+
+- opts: ["-novid"]
+  desc: "Disables the Intro video when launching CS:GO (Speeds up game launch)"
+
+- opts: ["-threads &lt;X&gt;"]
+  desc: |
+    Tell CS:GO that it can use up to X threads (useful for quad-core/hexa-core processors with or without hyper threading) --
+    DO NOT set this to a value larger than the number of threads you can use (Note: CS:GO by default uses approximately 3 threads)
+
+- opts: ["-tickrate &lt;rate&gt;"]
+  desc: |
+    Sets the tickrate of local games (e.g. on your machine), recommend you set this to 128 (Note: accepts values between 0 & 128),
+    although Valve dedicated servers run at 64. Tickrate refers to the number of ticks (updates) per second made by the server;
+    128 is the most the game engine can handle and should yield the best (most responsive/accurate) results.
+
+- opts: ["-high"]
+  desc: |
+    Tell CS:GO to run at High Priority; can increase fps/reduce lag but slowdown other processes running on your computer
+
+- opts: ["-full","-fullscreen"]
+  desc: "Sets the game to run at fullscreen"
+
+- opts: ["-w &lt;pixels&gt;","-width &lt;pixels&gt;"]
+  desc: "Sets the width of the game in pixels (windowed or fullscreen). Make sure this is less than or equal to your monitor's maximum resolution"
+
+- opts: ["-h &lt;pixels&gt;","-height &lt;pixels&gt;"]
+  desc: "Sets the height of the game in pixels (windowed or fullscreen). Make sure this is less than or equal to your monitor's maximum resolution"
+
+- opts: ["-freq &lt;rate&gt;","-refresh &lt;rate&gt;","-refreshrate &lt;rate&gt;"]
+  desc: |
+    Sets the frequency the game refreshes the screen at in Hz (Refresh rate).
+    Make sure this is less that or equal to you monitor's maximum refresh rate.
+    You should only need to set this if you have a 120Hz/144Hz (>60Hz) display or similar
+
+- opts: ["-lv"]
+  desc: |
+    Sets CS:GO to run in low violence mode. There should be no/reduced blood splatters and removes ragdoll effects
+    (instead dead enemies raise their hands above their head/surrender gesture)
+
+- opts: ["-window","-windowed","-sw","-startwindowed"]
+  desc: "Sets the game to open in windowed mode"
+
+- opts: ["-noborder"]
+  desc: "Removes Windows border when running in windowed mode"
+
+- opts: ["-x &lt;pixels&gt;","-y &lt;pixels&gt;"]
+  desc: "Sets the x,y coordinates in pixels of the game window (when running in windowed mode"
+
+- opts: ["-language &lt;language&gt;"]
+  desc: "Sets the language CS:GO should run in (e.g. english) -- this can differ from Steam language"
