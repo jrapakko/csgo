@@ -1,6 +1,6 @@
 - opt: func_break_max_pieces
   enable: true
-  min_max_vals: [0,"&infini;?"]
+  min_max_vals: [0,"&infin;?"]
   default_val: 15
 
 - opt: r_dynamic
@@ -35,17 +35,17 @@
 
 - opt: cl_detail_avoid_radius
   enable: true
-  min_max_vals: [0,"&infini;?"]
+  min_max_vals: [0,"&infin;?"]
   default_val: 64
 
 - opt: cl_detail_avoid_recover_speed
   enable: true
-  min_max_vals: [0,"&infini;?"]
+  min_max_vals: [0,"&infin;?"]
   default_val: 0
 
 - opt: cl_detail_max_sway
   enable: true
-  min_max_vals: [0,"&infini;?"]
+  min_max_vals: [0,"&infin;?"]
   default_val: 5
 
 - opt: cl_forcepreload
@@ -55,17 +55,17 @@
 
 - opt: fps_max
   enable: false
-  min_max_vals: [0,"&infini;"]
+  min_max_vals: [0,"&infin;"]
   default_val: 300
 
 - opt: fps_max_menu
   enable: false
-  min_max_vals: [0,"&infini;"]
+  min_max_vals: [0,"&infin;"]
   default_val: 120
 
 - opt: engine_nofocus_sleep
   enable: false
-  min_max_vals: [0,"&infini;(careful settings this can cause major instability)"]
+  min_max_vals: [0,"&infin;(careful settings this can cause major instability)"]
   default_val: 50
 
 - opt: mat_queue_mode
