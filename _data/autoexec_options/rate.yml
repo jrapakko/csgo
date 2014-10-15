@@ -20,7 +20,7 @@
 
 - opt: cl_interp_ratio
   enable: true
-  min_max_vals: [0,"&infini;"]
+  min_max_vals: [0,"&infin;"]
   default_val: 2.0
 
 - opt: cl_resend
