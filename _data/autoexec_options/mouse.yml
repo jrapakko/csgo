@@ -25,15 +25,15 @@
 
 - opt: m_customaccel_max
   enable: true
-  min_max_vals: [0,"&infini;"]
+  min_max_vals: [0,"&infin;"]
   default_val: 0
 
 - opt: m_mouseaccel1
   enable: true
-  min_max_vals: [0,"&infini;"]
+  min_max_vals: [0,"&infin;"]
   default_val: 0
 
 - opt: m_mouseaccel2
   enable: true
-  allowed_vals: [0,"&infini;"]
+  allowed_vals: [0,"&infin;"]
   default_val: 0
