@@ -1,0 +1,99 @@
+- opt: cl_showloadout
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_loadout_colorweaponnames
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_hud_color
+  enable: true
+  allowed_vals: [0,1,2,3,4,5,6,7,8,9,10]
+  default_val: 0
+
+- opt: cl_hud_background_alpha
+  enable: true
+  min_max_vals: ["0.000000","1.000000"]
+  default_val: 0.5
+
+- opt: cl_hud_playercount_showcount
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: cl_hud_playercount_pos
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: cl_hud_bomb_under_radar
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_hud_healthammo_style
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: hud_scaling
+  enable: true
+  min_max_vals: ["0.500000","1.000000"]
+  default_val: 1.0
+
+- opt: cl_teammate_colors_show
+  enable: true
+  allowed_vals: [0,1,2]
+  default_val: 1
+
+- opt: cl_color
+  enable: true
+  allowed_vals: [0,1,2,3,4]
+  default_val: 0
+
+- opt: cl_radar_always_centered
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_radar_rotate
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_radar_icon_scale_min 
+  enable: true
+  min_max_vals: ["0.400000","1.000000"]
+  default_val: 0.6
+
+- opt: cl_hud_radar_scale
+  enable: true
+  min_max_vals: ["0.250000","1.000000"]
+  default_val: 0.7
+
+- opt: cl_radar_scale
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_radar_square_with_scoreboard
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_showfps
+  enable: false
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: cl_scoreboard_mouse_enable_binding
+  enable: true
+  allowed_vals: ["name of the binding to enable selection in scoreboard"]
+  default_val: "+attack2"
+
+- opt: hud_showtargetid
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1

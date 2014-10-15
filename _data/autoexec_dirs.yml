@@ -1,0 +1,54 @@
+- id: "rate-settings"
+  dir: "_rate/"
+  name: "Rate Settings"
+  weight: 0
+
+- id: "netgraph-settings"
+  dir: "_netgraph/"
+  name: "Netgraph Settings"
+  weight: 1
+
+- id: "video-settings"
+  dir: "_video/"
+  name: "Video Options"
+  weight: 2
+
+- id: "audio-settings"
+  dir: "_audio/"
+  name: "Audio Options"
+  weight: 3
+
+- id: "mouse-settings"
+  dir: "_mouse/"
+  name: "Mouse Options"
+  weight: 4
+
+- id: "game-settings"
+  dir: "_game/"
+  name: "Game Settings"
+  weight: 5
+
+- id: "viewmodel-settings"
+  dir: "_viewmodel/"
+  name: "Viewmodel Settings"
+  weight: 6
+
+- id: "hud-settings"
+  dir: "_hud/"
+  name: "HUD Settings"
+  weight: 7
+
+- id: "xhair-settings"
+  dir: "_xhair/"
+  name: "Crosshair Settings"
+  weight: 8
+
+- id: "keybinds"
+  dir: "_keybinds/"
+  name: "Keybinds &amp; Aliases"
+  weight: 9
+
+- id: "misc-settings"
+  dir: "_misc/"
+  name: "Misc"
+  weight: 10

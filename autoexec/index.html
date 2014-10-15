@@ -1,8 +1,26 @@
 ---
-layout: default
-title: "Counter-Strike: Global Offensive Autoexec Generator & Configurator"
+header_title: "Autoexec Configuration &amp; Generation"
 nav_title: "Autoexec Generator"
 nav_url: "/autoexec/"
 nav_weight: 1
-page_specific_scripts: ["tabs.js"]
+page_specific_scripts: ["tabs.js","autoexec-strings.js"]
 ---
+{% assign dirs = site.data.autoexec_dirs | sort:"weight" %}
+<div class="col-md-2">
+    <ul class="nav nav-pills-alt nav-stacked" role="tablist">
+        {% for dir in dirs %}
+            <li{% if dir.weight == 0 %} class="active"{% endif %}>
+                <a href="#{{ dir.id }}" role="tab" data-toggle="tab">{{ dir.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="col-md-10">
+    <div class="tab-content">
+        {% for dir in dirs %}
+            <div class="tab-pane fade{% if dir.weight == 0 %} in active{% endif %}" id="{{ dir.id }}">
+                {% include_relative {{ dir.dir }}index.html %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

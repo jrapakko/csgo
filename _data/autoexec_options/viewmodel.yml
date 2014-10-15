@@ -1,0 +1,54 @@
+- opt: viewmodel_presetpos
+  enable: true
+  allowed_vals: [0,1,2,3]
+  default_val: 1
+
+- opt: viewmodel_fov
+  enable: true
+  min_max_vals: [54.0,68.0]
+  default_val: 54.0
+
+- opt: viewmodel_offset_x
+  enable: true
+  min_max_vals: ["-2.000000","2.500000"]
+  default_val: 0.0
+
+- opt: viewmodel_offset_y
+  enable: true
+  min_max_vals: ["-2.000000","2.000000"]
+  default_val: 0.0
+
+- opt: viewmodel_offset_z
+  enable: true
+  min_max_vals: ["-2.000000","2.000000"]
+  default_val: 0.0
+
+- opt: cl_viewmodel_shift_left_amt
+  enable: true
+  min_max_vals: [0.5,2.0]
+  default_val: 1.5
+
+- opt: cl_viewmodel_shift_right_amt
+  enable: true
+  min_max_vals: [0.25,2.0]
+  default_val: 0.75
+
+- opt: cl_bob_loweramt
+  enable: true
+  min_max_vals: [5,30]
+  default_val: 21
+
+- opt: cl_bobamt_lat
+  enable: true
+  min_max_vals: [0.1,2.0]
+  default_val: 0.4
+
+- opt: cl_bobamt_vert
+  enable: true
+  min_max_vals: [0.1,2.0]
+  default_val: 0.25
+
+- opt: cl_bobcycle
+  enable: true
+  min_max_vals: [0.1,2.0]
+  default_val: 0.98

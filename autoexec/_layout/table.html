@@ -1,0 +1,16 @@
+<table class="table table-striped table-hover">
+    <tbody>
+    {% for opt in opts %}
+        <tr id="{{ opt.opt }}">
+            <td><label class="checkbox-inline"><input type="checkbox"{% if opt.enable %} checked{% endif %}></label></td>
+            <td class="nowrap"><code>{{ opt.opt }}</code></td>
+            {% if opt.allowed_vals %}
+                <td>Allowed Values: <code>{{ opt.allowed_vals | array_to_sentence_string }}</code></td>
+            {% elsif opt.min_max_vals %}
+                <td>Allowed Values: <code>from {{ opt.min_max_vals[0] }} to {{ opt.min_max_vals[1] }}</code></td>
+            {% endif %}
+            <td>Default Value: <code>{{ opt.default_val }}</code></td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>

@@ -1,0 +1,29 @@
+- opt: host_writeconfig
+  enable: true
+  allowed_vals: ["N/A"]
+  default_val: "Writes autoexec.cfg to config.cfg on game launch"
+
+- opt: con_filter_enable
+  enable: false
+  allowed_vals: [0,1,2]
+  default_val: 0
+
+- opt: con_filter_text
+  enable: false
+  allowed_vals: ["N/A"]
+  default_val: "Text with which to filter console spew, use <code>con_filter_enable</code> to turn on"
+
+- opt: con_filter_text_out
+  enable: false
+  allowed_vals: ["N/A"]
+  default_val: "Text with which to filter OUT of console spew"
+
+- opt: developer
+  enable: false
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: echo
+  enable: true
+  allowed_vals: ["N/A"]
+  default_val: "Echos the string given to it in console (prints it in console)"

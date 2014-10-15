@@ -1,0 +1,19 @@
+- opt: net_graph
+  enable: false
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: net_graphpos
+  enable: false
+  allowed_vals: [0,1,2,3,4]
+  default_val: 1
+
+- opt: net_graphheight
+  enable: false
+  min_max_vals: [0,"height of screen in pixels"]
+  default_val: 64
+
+- opt: net_graphproportionalfont
+  enable: false
+  allowed_vals: [0,1]
+  default_val: 0

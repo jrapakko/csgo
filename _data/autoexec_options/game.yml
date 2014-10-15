@@ -1,0 +1,109 @@
+- opt: cl_righthand
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: gameinstructor_enable
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_autohelp
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_showhelp
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_clanid
+  enable: false
+  allowed_vals: [0,"&infin;"]
+  default_val: "undefined"
+
+- opt: player_nevershow_communityservermessage
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_downloadfilter
+  enable: true
+  allowed_vals: ["all","nosounds","none"]
+  default_val: "none"
+
+- opt: cl_disablehtmlmotd
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: cl_disablefreezecam
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: cl_freezecameffects_showholiday
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_showclan_in_death_notice
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_spec_mode
+  enable: true
+  allowed_vals: [4,5]
+  default_val: "0 (random)"
+
+- opt: spec_usenumberkeys_nobinds
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_obs_interp_enable
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_autowepswitch
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: cl_use_opens_buy_menu
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: closeonbuy
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: option_duck_method
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: option_speed_method
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: hud_takesshots 
+  enable: false
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: ui_steam_overlay_notification_position
+  enable: true
+  allowed_vals: ["bottomright","topright","bottomleft","bottomright"]
+  default_val: "bottomright"
+
+- opt: cl_showpluginmessages
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1

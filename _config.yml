@@ -1,1 +1,12 @@
 baseurl: /csgo
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+      title: "Counter-Strike: Global Offensive Autoexec Generator & Configurator"
+      header_title: ""
+      nav_title: "Nav Title Not Overriden"
+      nav_url: "/"
+      nav_weight: -1

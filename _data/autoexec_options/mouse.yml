@@ -1,0 +1,39 @@
+- opt: sensitivity
+  enable: true
+  min_max_vals: ["0.0001","10000000"]
+  default_val: 6.0
+
+- opt: zoom_sensitivity_ratio_mouse
+  enable: true
+  min_max_vals: ["0.0001","10000000"]
+  default_val: 1.0
+
+- opt: m_rawinput
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: m_mousespeed
+  enable: true
+  allowed_vals: [0,1,2]
+  default_val: 1
+
+- opt: m_customaccel
+  enable: true
+  allowed_vals: [0,1,2,3]
+  default_val: 3
+
+- opt: m_customaccel_max
+  enable: true
+  min_max_vals: [0,"&infini;"]
+  default_val: 0
+
+- opt: m_mouseaccel1
+  enable: true
+  min_max_vals: [0,"&infini;"]
+  default_val: 0
+
+- opt: m_mouseaccel2
+  enable: true
+  allowed_vals: [0,"&infini;"]
+  default_val: 0

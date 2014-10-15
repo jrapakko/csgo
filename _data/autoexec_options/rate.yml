@@ -1,0 +1,39 @@
+- opt: rate
+  enable: true
+  min_max_vals: [0,128000]
+  default_val: 80000
+
+- opt: cl_cmdrate
+  enable: true
+  min_max_vals: [0,128]
+  default_val: 64
+
+- opt: cl_updaterate
+  enable: true
+  min_max_vals: [0,128]
+  default_val: 64
+
+- opt: cl_interp
+  enable: true
+  min_max_vals: [0,0.5]
+  default_val: 0.03125
+
+- opt: cl_interp_ratio
+  enable: true
+  min_max_vals: [0,"&infini;"]
+  default_val: 2.0
+
+- opt: cl_resend
+  enable: true
+  min_max_vals: [1.5,20]
+  default_val: 6
+
+- opt: cl_resend_timeout
+  enable: true
+  min_max_vals: [1.5,20000]
+  default_val: 60
+
+- opt: mm_dedicated_search_maxping
+  enable: true
+  min_max_vals: [50,350]
+  default_val: 150

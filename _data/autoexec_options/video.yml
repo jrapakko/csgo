@@ -1,0 +1,89 @@
+- opt: func_break_max_pieces
+  enable: true
+  min_max_vals: [0,"&infini;?"]
+  default_val: 15
+
+- opt: r_dynamic
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: r_drawtracers_firstperson
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: muzzleflash_light
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: safezonex
+  enable: false
+  min_max_vals: [0.2,1]
+  default_val: 0.9
+
+- opt: safezoney
+  enable: false
+  min_max_vals: [0.85,1]
+  default_val: 0.9
+
+- opt: cl_detail_avoid_force
+  enable: true
+  min_max_vals: [0,1.0]
+  default_val: 0
+
+- opt: cl_detail_avoid_radius
+  enable: true
+  min_max_vals: [0,"&infini;?"]
+  default_val: 64
+
+- opt: cl_detail_avoid_recover_speed
+  enable: true
+  min_max_vals: [0,"&infini;?"]
+  default_val: 0
+
+- opt: cl_detail_max_sway
+  enable: true
+  min_max_vals: [0,"&infini;?"]
+  default_val: 5
+
+- opt: cl_forcepreload
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 0
+
+- opt: fps_max
+  enable: false
+  min_max_vals: [0,"&infini;"]
+  default_val: 300
+
+- opt: fps_max_menu
+  enable: false
+  min_max_vals: [0,"&infini;"]
+  default_val: 120
+
+- opt: engine_nofocus_sleep
+  enable: false
+  min_max_vals: [0,"&infini;(careful settings this can cause major instability)"]
+  default_val: 50
+
+- opt: mat_queue_mode
+  enable: true
+  allowed_vals: [-1,0,1,2]
+  default_val: -1
+
+- opt: mat_monitor_gamma
+  enable: true
+  min_max_vals: [1.6,2.6]
+  default_val: 2.2
+
+- opt: mat_vsync
+  enable: true
+  allowed_vals: [0,1]
+  default_val: 1
+
+- opt: mat_savechanges
+  enable: true
+  allowed_vals: ["N/A"]
+  default_val: "Writes mat command changes out"
