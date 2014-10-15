@@ -15,7 +15,7 @@
 
 - opt: cl_crosshairsize
   enable: true
-  min_max_vals: [0,"&infini;?"]
+  min_max_vals: [0,"&infin;?"]
   default_val: 5
 
 - opt: cl_crosshairthickenss
@@ -25,12 +25,12 @@
 
 - opt: cl_crosshairgap
   enable: true
-  min_max_vals: ["-&infini;?","%infini;?"]
+  min_max_vals: ["-&infin;?","%infin;?"]
   default_val: 1
 
 - opt: cl_fixedcrosshairgap
   enable: true
-  min_max_vals: ["-&infini;?","%infini;?"]
+  min_max_vals: ["-&infin;?","%infin;?"]
   default_val: 3
 
 - opt: cl_crosshairgap_useweaponvalue
@@ -95,5 +95,5 @@
 
 - opt: cl_crosshair_dynamic_splitdist
   enable: true
-  min_max_vals: [0,"&infini;?"]
+  min_max_vals: [0,"&infin;?"]
   default_val: 7
