@@ -1,0 +1,8 @@
+{% assign opts = site.data.autoexec_options | map: dir.fname %}
+{% for opt in opts[0] %}
+    "{{ opt.opt }}": {
+        "opt": "{{ opt.opt }}",
+        "enable": "",
+        "value": ""
+    }{% if forloop.last == false %},{% endif %}
+{% endfor %}

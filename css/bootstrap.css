@@ -1810,6 +1810,10 @@ pre code
     border-radius: 0;
     background-color: transparent;
 }
+.table-code pre
+{
+    max-width: 260px;
+}
 .pre-scrollable
 {
     overflow-y: scroll;
@@ -2733,6 +2737,15 @@ th
     vertical-align: top;
 
     border-top: 1px solid #ddd;
+}
+.table > thead > tr > th.table-code,
+.table > tbody > tr > th.table-code,
+.table > tfoot > tr > th.table-code,
+.table > thead > tr > td.table-code,
+.table > tbody > tr > td.table-code,
+.table > tfoot > tr > td.table-code
+{
+    max-width: 30%;
 }
 .table > thead > tr > th
 {

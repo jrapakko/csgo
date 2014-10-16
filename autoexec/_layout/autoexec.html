@@ -9,6 +9,8 @@
             <tr>
                 <th>Enable</th>
                 <th>Commands</th>
+                <th>Description</th>
+                <th>Value</th>
                 <th>Allowed Values</th>
                 <th>Default Value</th>
             </tr>
@@ -17,7 +19,10 @@
         {% for opt in opts[0] %}
             <tr>
                 <td><a class="opt-enable" href="#{{ opt.opt }}"><span id="{{ opt.opt }}" class="{% if opt.enable %}glyphicon enabled glyphicon-ok glyphicon-green{% else %}glyphicon disabled glyphicon-remove glyphicon-red{% endif %}"></span></a></td>
-                <td class="nowrap"><code>{{ opt.opt }}</code></td>
+                <td class="nowrap table-code"><code>{{ opt.opt }}</code></td>
+                <td class="table-code"><pre>{{ opt.desc }}</pre></td>
+                {% assign val = opt.val %}
+                <td>{% include_relative _layout/value.html %}</td>
                 {% if opt.allowed_vals %}
                     <td><code>{{ opt.allowed_vals | array_to_sentence_string }}</code></td>
                 {% elsif opt.min_max_vals %}

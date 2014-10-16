@@ -1,0 +1,14 @@
+---
+layout: ""
+nav_title: ""
+---
+{
+{% for dir in site.data.autoexec_dirs %}
+    "{{ dir.fname }}": {"div_id": "{{ dir.id }}",
+    "table_id": "#{{ dir.fname }}",
+    "name": "{{ dir.name }}",
+    "opts": {
+        {% include_relative _strings/autoexec_opts.html %}
+    }}{% if forloop.last == false %},{% endif %}
+{% endfor %}
+}
