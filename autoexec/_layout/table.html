@@ -2,7 +2,7 @@
     <tbody>
     {% for opt in opts %}
         <tr id="{{ opt.opt }}">
-            <td><label class="checkbox-inline"><input type="checkbox"{% if opt.enable %} checked{% endif %}></label></td>
+            <td><input type="checkbox" value="enabled"{% if opt.enable %} checked{% endif %}></td>
             <td class="nowrap"><code>{{ opt.opt }}</code></td>
             {% if opt.allowed_vals %}
                 <td>Allowed Values: <code>{{ opt.allowed_vals | array_to_sentence_string }}</code></td>
