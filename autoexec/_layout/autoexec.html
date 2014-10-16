@@ -16,7 +16,7 @@
         <tbody>
         {% for opt in opts[0] %}
             <tr>
-                <td><a class="opt-enable {% if opt.enable %}enabled{% else %}disabled{% endif %}" href="#{{ opt.opt }}"><span id="{{ opt.opt }}" class="{% if opt.enable %}glyphicon glyphicon-ok glyphicon-green{% else %}glyphicon glyphicon-remove glyphicon-red{% endif %}"></span></a></td>
+                <td><a class="opt-enable" href="#{{ opt.opt }}"><span id="{{ opt.opt }}" class="{% if opt.enable %}glyphicon enabled glyphicon-ok glyphicon-green{% else %}glyphicon disabled glyphicon-remove glyphicon-red{% endif %}"></span></a></td>
                 <td class="nowrap"><code>{{ opt.opt }}</code></td>
                 {% if opt.allowed_vals %}
                     <td><code>{{ opt.allowed_vals | array_to_sentence_string }}</code></td>
