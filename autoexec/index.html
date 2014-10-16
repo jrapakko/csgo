@@ -3,7 +3,7 @@ header_title: "Autoexec Configuration &amp; Generation"
 nav_title: "Autoexec Generator"
 nav_url: "/autoexec/"
 nav_weight: 1
-page_specific_scripts: ["tabs.js","autoexec-strings.js"]
+page_specific_scripts: ["autoexec-strings.js"]
 ---
 {% assign dirs = site.data.autoexec_dirs | sort:"weight" %}
 <div class="col-md-2">
@@ -19,7 +19,7 @@ page_specific_scripts: ["tabs.js","autoexec-strings.js"]
     <div class="tab-content">
         {% for dir in dirs %}
             <div class="tab-pane fade{% if dir.weight == 0 %} in active{% endif %}" id="{{ dir.id }}">
-                {% include_relative {{ dir.dir }}index.html %}
+                {% include_relative _layout/autoexec.html %}
             </div>
         {% endfor %}
     </div>

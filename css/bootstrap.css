@@ -353,6 +353,14 @@ th
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+.glyphicon-green
+{
+    color: #5cb85c;
+}
+.glyphicon-red
+{
+    color: #d9534f;
+}
 .glyphicon-asterisk:before
 {
     content: '\2a';
