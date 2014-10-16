@@ -20,7 +20,8 @@
             <tr>
                 <td><a class="opt-enable" href="#{{ opt.opt }}"><span id="{{ opt.opt }}" class="{% if opt.enable %}glyphicon enabled glyphicon-ok glyphicon-green{% else %}glyphicon disabled glyphicon-remove glyphicon-red{% endif %}"></span></a></td>
                 <td class="nowrap table-code"><code>{{ opt.opt }}</code></td>
-                <td class="table-code"><pre>{{ opt.desc }}</pre></td>
+                <td class="table-code"><pre><code class="keep-color">{{ opt.name }}</code>
+{{ opt.desc }}</pre></td>
                 {% assign val = opt.val %}
                 <td>{% include_relative _layout/value.html %}</td>
                 {% if opt.allowed_vals %}

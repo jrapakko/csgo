@@ -1810,9 +1810,17 @@ pre code
     border-radius: 0;
     background-color: transparent;
 }
+pre code.keep-color
+{
+    color: #c7254e;
+}
 .table-code pre
 {
     max-width: 260px;
+
+    white-space: pre-wrap;
+    word-wrap: normal;
+    word-break: normal;
 }
 .pre-scrollable
 {
