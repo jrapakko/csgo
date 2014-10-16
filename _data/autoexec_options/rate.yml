@@ -2,38 +2,73 @@
   enable: true
   min_max_vals: [0,128000]
   default_val: 80000
+  name: Rate
+  desc: |
+    This is the throughput you can send messages to the server in b/s (often enforced to some degree by server)
+  val: 128000
 
 - opt: cl_cmdrate
   enable: true
   min_max_vals: [0,128]
   default_val: 64
+  name: Command Rate
+  desc: |
+    This is the rate you send commands to the server (generally enforced by the server)
+  val: 128
 
 - opt: cl_updaterate
   enable: true
   min_max_vals: [0,128]
   default_val: 64
+  name: Update Rate
+  desc: |
+    This is the rate you receive updates from the server (generally enforced by the server)
+  val: 128
 
 - opt: cl_interp
   enable: true
   min_max_vals: [0,0.5]
   default_val: 0.03125
+  name: Interpolation Value (Delay)
+  desc: |
+    Generally good to be as low as possible, look this up as it gets quite complicated
+    0 should autoset this to the lowest your client is capable of
+  val: 0
 
 - opt: cl_interp_ratio
   enable: true
   min_max_vals: [0,"&infin;"]
   default_val: 2.0
+  name: Interpolation Ratio
+  desc: |
+    Used as a ratio to calculate your lowest cl_interp value (look this up if you want to again)
+    Recommend that you set this to 1 for best results.
+  val: 1
 
 - opt: cl_resend
   enable: true
   min_max_vals: [1.5,20]
   default_val: 6
+  name: Resend Delay
+  desc: |
+    The delay betwen each attempt to connect to a server (6 seconds seems a bit high to me)
+  val: 3
 
 - opt: cl_resend_timeout
   enable: true
   min_max_vals: [1.5,20000]
   default_val: 60
+  name: Resend Timeout
+  desc: |
+    The amount of time that resend attempts are sent before it is considered that you cannot connect (you are timed out)
+    Divide this number by your resend delay (cl_resend) to set the number of timeouts (or multiply cl_resend by the number of attempts you want to use)
+  val: 9
 
 - opt: mm_dedicated_search_maxping
   enable: true
   min_max_vals: [50,350]
   default_val: 150
+  name: Matchmaking Search Maximum Ping
+  desc: |
+    The maximum latency allowable by a dedicated (Valve official) server that your client will accept as ok (packets are smaller than in game so your actual ping can be a bit higher)
+  val: 90

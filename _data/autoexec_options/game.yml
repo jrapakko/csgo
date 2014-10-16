@@ -2,108 +2,206 @@
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Righthand Toggle
+  desc: |
+    0 - Lefthanded Model
+    1 - Righthanded Model
+  val: 0
 
 - opt: gameinstructor_enable
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Game Instructor Message Enable
+  desc: |
+    Messages such as "Press E to plant the bomb" toggle
+    0 to disable
+  val: 0
 
 - opt: cl_autohelp
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Disables some hints
+  desc: |
+    Disables hints such as "Switched to burst-fire mode"
+    0 to disable
+  val: 0
 
 - opt: cl_showhelp
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Disable Help Popups
+  desc: |
+    Disables help popups that can appear near middle of screen
+    0 to disable
+  val: 0
 
 - opt: cl_clanid
   enable: false
   allowed_vals: [0,"&infin;"]
   default_val: "undefined"
+  name: Default clanid to use
+  desc: |
+    Enter the id of the steamgroup you want your nick to automatically show up as a part of
+  val: 0
 
 - opt: player_nevershow_communityservermessage
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Community Server Message
+  desc: |
+    Enable/Disable (1 to disable) popup message that can show up when connecting to a community (non-official Valve server)
+  val: 0
 
 - opt: cl_downloadfilter
   enable: true
   allowed_vals: ["all","nosounds","none"]
   default_val: "none"
+  name: Download Filter
+  desc: |
+    Allows you to filter custom file downloads from servers (community servers)
+    Setting this to all can make custom gamemodes and break and not allow you to download maps from servers so recommend this is set to none or nosounds
+  val: "nosounds"
 
 - opt: cl_disablehtmlmotd
   enable: true
   allowed_vals: [0,1]
   default_val: 0
+  name: Disable HTML-based MOTDs (Messages of the Day)
+  desc: |
+    Allows you to disable the html motds that popup before team selection when connecting to a server. Recommend 1 as it disables flash videos that sometimes annoyingly popup on connect.
+  val: 1
 
 - opt: cl_disablefreezecam
   enable: true
   allowed_vals: [0,1]
   default_val: 0
+  name: Disables freezecam on death
+  desc: |
+    Disables the freezecam effect when you die, allowing you to spectate right away
+  val: 1
 
 - opt: cl_freezecameffects_showholiday
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Holiday freezecam effects
+  desc: |
+    Enables holiday-based freezecam effects/messages
+  val: 0
 
 - opt: cl_showclan_in_death_notice
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Show clanname in death notices
+  desc: |
+    Shows the clan names (eg steam group names) of the player dead, the player with the frag (and assist)
+  val: 1
 
 - opt: cl_spec_mode
   enable: true
   allowed_vals: [4,5]
   default_val: "0 (random)"
+  name: Default Spectator Mode
+  desc: |
+    Sets the default spectator mode (between thirdperson and firstperson perspectives)
+    0 - default (random? not sure what the effect is)
+    4 - firstperson (automatically spectate in firstperson on death or in spectator slots)
+    5 - thirdperson (same as above but in thirdperson, will still default to firstperson if server blocks thirdperson specators)
 
 - opt: spec_usenumberkeys_nobinds
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Number Keys or Binds to Spectate/Vote
+  desc: |
+    Use raw numberkeys or binds to select player to spectate and next map vote selection
+  val: 1
 
 - opt: cl_obs_interp_enable
-  enable: true
+  enable: false
   allowed_vals: [0,1]
   default_val: 1
+  name: Smooth Spectator Camera
+  desc: |
+    Enables/Disables smooth switching between player when observing a game (smoothly interpolates between nearby players when you switch players while in spectate mode)
+  val: 1
 
 - opt: cl_autowepswitch
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Auto-Weapon Switch on Pickup
+  desc: |
+    Automatically switches to a stronger weapon when picked up
+    Highly recommended you keep this off as weapons you pick up can be out of ammo or can create a delay before you can fire
+  val: 0
 
 - opt: cl_use_opens_buy_menu
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Use key also open buy menu
+  desc: |
+    You can use the use key to open the buy menu. Recommended to keep off as an accidental keypress can slow down your gameplay & your buykey (default: b) already does this for you
+  val: 0
 
 - opt: closeonbuy
   enable: true
   allowed_vals: [0,1]
   default_val: 0
+  name: Close menu on buy
+  desc: |
+    Closes the buy menu after you buy something. Personal preference: I like it on as it doesn't take much time to press b again to buy.
+  val: 1
 
 - opt: option_duck_method
   enable: true
   allowed_vals: [0,1]
   default_val: 0
+  name: Duck Method
+  desc: |
+    Switches between [1] toggle to duck (press key once to duck, again to not) and [0] hold to duck (stay ducking while key pressed)
+  val: 0
 
 - opt: option_speed_method
   enable: true
   allowed_vals: [0,1]
   default_val: 0
+  name: Walk Method
+  desc: |
+    Switches between [1] toggle to walk (press key once to walk, again to not) and [0] hold to walk (stay walking while key pressed)
+  val: 0
 
 - opt: hud_takesshots 
   enable: false
   allowed_vals: [0,1]
   default_val: 0
+  name: Automatic screenshots
+  desc: |
+    Takes automatic screenshots at the end of games (map changes, etc.)... don't see the point in this as you can easily take screenshots when you need or want them.
+  val: 0
 
 - opt: ui_steam_overlay_notification_position
   enable: true
-  allowed_vals: ["bottomright","topright","bottomleft","bottomright"]
+  allowed_vals: ["bottomright","topright","bottomleft","topleft"]
   default_val: "bottomright"
+  name: Steam Overlay Notification Position
+  desc: |
+    Sets the position where steam overlay messages show up.
+    Recommend not in top left (blocks radar) and prefer myself to keep it in the top right so it doesn't cover hp/armor or loadout/ammunition portions of the hud
+  val: "topright"
 
 - opt: cl_showpluginmessages
-  enable: true
+  enable: false
   allowed_vals: [0,1]
   default_val: 1
+  name: Show Plugin Messages
+  desc: |
+    When playing (mostly on custom servers), show messages from plugins such as gun menus for non-official deathmatch, rank, etc.
+    Don't see any real reason to have this off
+  val: 1
