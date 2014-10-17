@@ -14,6 +14,9 @@ function toggleCfgCommand(obj, event) {
     event.stopPropagation();
     event.preventDefault();
     $(obj).toggleClass('enabled disabled glyphicon-ok glyphicon-remove glyphicon-green glyphicon-red');
-    $(obj).parents('tr').find('td > code').toggleClass('text-muted');
+    var p = $(obj).parents('tr');
+    p.find('td > code').toggleClass('text-muted');
+    p.find('td > pre').toggleClass('text-muted');
+    p.find('td > pre > code').toglleClass('text-muted keep-color');
     return false;
 }
