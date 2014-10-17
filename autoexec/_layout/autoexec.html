@@ -19,7 +19,7 @@
         {% for opt in opts[0] %}
             <tr{% if opt.enable == false %} class="danger"{% endif %}>
                 <td><a class="opt-enable" href="#{{ opt.opt }}"><span id="{{ opt.opt }}" class="{% if opt.enable %}glyphicon enabled glyphicon-ok glyphicon-green{% else %}glyphicon disabled glyphicon-remove glyphicon-red{% endif %}"></span></a></td>
-                <td class="nowrap table-code"><code>{{ opt.opt }}</code></td>
+                <td class="nowrap table-code"><code{% if opt.enable == false %} class="text-muted"{% endif %}>{{ opt.opt }}</code></td>
                 <td class="table-code"><pre{% if opt.enable == false %} class="text-muted"{% endif %}><code class="{% if opt.enable %}keep-color{% else %}text-muted{% endif %}">{{ opt.name }}</code>
 {{ opt.desc }}</pre></td>
                 {% assign val = opt.val %}
