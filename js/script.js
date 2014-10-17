@@ -17,6 +17,6 @@ function toggleCfgCommand(obj, event) {
     var p = $(obj).parents('tr');
     p.find('td > code').toggleClass('text-muted');
     p.find('td > pre').toggleClass('text-muted');
-    p.find('td > pre > code').toglleClass('text-muted keep-color');
+    p.find('td > pre > code').toggleClass('text-muted keep-color');
     return false;
 }
