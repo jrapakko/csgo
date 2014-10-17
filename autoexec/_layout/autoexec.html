@@ -20,16 +20,16 @@
             <tr{% if opt.enable == false %}class="danger"{% endif %}>
                 <td><a class="opt-enable" href="#{{ opt.opt }}"><span id="{{ opt.opt }}" class="{% if opt.enable %}glyphicon enabled glyphicon-ok glyphicon-green{% else %}glyphicon disabled glyphicon-remove glyphicon-red{% endif %}"></span></a></td>
                 <td class="nowrap table-code"><code>{{ opt.opt }}</code></td>
-                <td class="table-code"><pre><code class="keep-color">{{ opt.name }}</code>
+                <td class="table-code"><pre{% if opt.enable == false %}class="text-muted"{% endif %}><code class="{% if opt.enable %}keep-color{% else %}text-muted{% endif %}">{{ opt.name }}</code>
 {{ opt.desc }}</pre></td>
                 {% assign val = opt.val %}
                 <td>{% include_relative _layout/value.html %}</td>
                 {% if opt.allowed_vals %}
-                    <td><code>{{ opt.allowed_vals | array_to_sentence_string }}</code></td>
+                    <td><code{% if opt.enable == false %}class="text-muted"{% endif %}>{{ opt.allowed_vals | array_to_sentence_string }}</code></td>
                 {% elsif opt.min_max_vals %}
-                    <td><code>from {{ opt.min_max_vals[0] }} to {{ opt.min_max_vals[1] }}</code></td>
+                    <td><code{% if opt.enable == false %}class="text-muted"{% endif %}>from {{ opt.min_max_vals[0] }} to {{ opt.min_max_vals[1] }}</code></td>
                 {% endif %}
-                <td><code>{{ opt.default_val }}</code></td>
+                <td><code{% if opt.enable == false %}class="text-muted"{% endif %}>{{ opt.default_val }}</code></td>
             </tr>
         {% endfor %}
         </tbody>
