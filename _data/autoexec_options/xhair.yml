@@ -2,6 +2,10 @@
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Crosshair
+  desc: |
+    Enables/Disables the crosshair
+  val: 1
 
 - opt: cl_crosshairstyle
   enable: true

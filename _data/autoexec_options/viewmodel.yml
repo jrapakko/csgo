@@ -7,6 +7,10 @@
   enable: true
   min_max_vals: [54.0,68.0]
   default_val: 54.0
+  name: "Viewmodel Field of View"
+  desc: |
+    Sets the size taken of the field of view by the firstperson viewmodel (gun) as a percentage (higher shows more)
+  val: 54.0
 
 - opt: viewmodel_offset_x
   enable: true

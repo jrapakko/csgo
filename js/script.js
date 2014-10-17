@@ -19,5 +19,11 @@ function toggleCfgCommand(obj, event) {
     p.find('td > code').toggleClass('text-muted');
     p.find('td > pre').toggleClass('text-muted');
     p.find('td > pre > code').toggleClass('text-muted keep-color');
+    var textin = p.find('td > :text');
+    if (textin.is(':disabled')) {
+        textin.prop({disabled: false});
+    } else {
+        textin.prop({disabled: true});
+    }
     return false;
 }

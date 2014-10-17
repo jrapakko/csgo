@@ -2,16 +2,28 @@
   enable: true
   min_max_vals: ["0.0001","10000000"]
   default_val: 6.0
+  name: "Mouse Sensitivity"
+  desc: |
+    mouse sensitivity as a multiplier to base dpi (1.0 is 1:1)
+  val: 1.0265625
 
 - opt: zoom_sensitivity_ratio_mouse
   enable: true
   min_max_vals: ["0.0001","10000000"]
   default_val: 1.0
+  name: "Ratio of Sensitivity when Scoped in"
+  desc: |
+    acts as a multiplier to the base sensitivity when scoped (1.0 is 1:1)
+  val: 1.0
 
 - opt: m_rawinput
   enable: true
   allowed_vals: [0,1]
   default_val: 0
+  name: "Mouse Raw Input"
+  desc: |
+    Takes input from mouse dpi, bypassing Windows (OS) settings
+  val: 1
 
 - opt: m_mousespeed
   enable: true

@@ -2,6 +2,10 @@
   enable: true
   allowed_vals: ["N/A"]
   default_val: "Writes autoexec.cfg to config.cfg on game launch"
+  name: "Write Config to config.cfg"
+  desc: |
+    This needs to be at the end of an autoexec.cfg for changes to stick on game launch
+  val: "N/A"
 
 - opt: con_filter_enable
   enable: false

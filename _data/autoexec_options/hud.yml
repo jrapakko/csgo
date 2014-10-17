@@ -2,6 +2,10 @@
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Show Loadout
+  desc: |
+    Toggles whether to share the current loadout at all time on the right side of the screen
+  val: 1
 
 - opt: cl_loadout_colorweaponnames
   enable: true
@@ -42,6 +46,10 @@
   enable: true
   min_max_vals: ["0.500000","1.000000"]
   default_val: 1.0
+  name: Size of the HUD
+  desc: |
+    The size of the HUD as a percentage of largest possible (1)
+  val: 1.0
 
 - opt: cl_teammate_colors_show
   enable: true

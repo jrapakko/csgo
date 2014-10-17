@@ -2,18 +2,45 @@
   enable: false
   allowed_vals: [0,1]
   default_val: 0
+  name: "Net Graph"
+  desc: |
+    A graph that shows relevant information to your connection such as:
+    fps (frames per second)
+    cmdrate
+    updaterate
+    ping
+    loss
+    choke
+    data (packet size, data rates & packet rates)
+    server simulation time (and std deviation)
+  val: 1
 
 - opt: net_graphpos
   enable: false
-  allowed_vals: [0,1,2,3,4]
-  default_val: 1
+  allowed_vals: [0,1,2]
+  default_val: 0
+  name: "Net Graph Position (Horizontal)"
+  desc: |
+    1 - far right
+    2 - middle
+    3 - far left
+  val: 0
 
 - opt: net_graphheight
   enable: false
   min_max_vals: [0,"height of screen in pixels"]
   default_val: 64
+  name: "Net Graph Position (Vertical)"
+  desc: |
+    Where on the screen to position the net graph
+    value refers to what pixel the top of the graph is drawn downward from
+  val: 32
 
 - opt: net_graphproportionalfont
   enable: false
   allowed_vals: [0,1]
-  default_val: 0
+  default_val: 1
+  name: "Net Graph Proportional Font"
+  desc: |
+    Enable/Disable Net Graph font being proportional to screen size (resolution)
+  val: 0
