@@ -58,4 +58,4 @@
 
 - opts: ["-language &lt;language&gt;"]
   desc: |
-    Sets the language CS:GO should run in (e.g. english) -- this can differ from Steam language
+    Sets the language CS:GO should run in (e.g. english) &mdash; this can differ from Steam language

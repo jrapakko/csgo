@@ -4,32 +4,52 @@
         <h3 class="panel-title">{{ dir.name }}</h3>
     </div>
     <div class="panel-body">
-    <table id="{{ dir.fname }}" class="table table-striped table-hover">
+    <table id="{{ dir.fname }}" class="table table-condensed table-striped table-hover">
         <thead>
             <tr>
-                <th>Enable</th>
-                <th>Commands</th>
-                <th>Description</th>
-                <th>Value</th>
-                <th>Allowed Values</th>
-                <th>Default Value</th>
+                <th><h4>Enable</h4></th>
+                <th><h4>Command</h4></th>
+                <th><h4>Description</h4></th>
+                <th><h4>Value</h4></th>
+                <th><h4>Allowed Values</h4></th>
+                <th><h4>Default Value</h4></th>
             </tr>
         </thead>
         <tbody>
         {% for opt in opts[0] %}
             <tr{% if opt.enable == false %} class="danger"{% endif %}>
-                <td><a class="opt-enable" href="#{{ opt.opt }}"><span id="{{ opt.opt }}" class="{% if opt.enable %}glyphicon enabled glyphicon-ok glyphicon-green{% else %}glyphicon disabled glyphicon-remove glyphicon-red{% endif %}"></span></a></td>
-                <td class="nowrap table-code"><code{% if opt.enable == false %} class="text-muted"{% endif %}>{{ opt.opt }}</code></td>
-                <td class="table-code"><pre{% if opt.enable == false %} class="text-muted"{% endif %}><code class="{% if opt.enable %}keep-color{% else %}text-muted{% endif %}">{{ opt.name }}</code>
-{{ opt.desc }}</pre></td>
+                <td>
+                    <a class="opt-enable" href="#{{ opt.opt }}">
+                        <span id="{{ opt.opt }}" class="{% if opt.enable %}glyphicon enabled glyphicon-ok glyphicon-green{% else %}glyphicon disabled glyphicon-remove glyphicon-red{% endif %}"></span>
+                    </a>
+                </td>
+                <td class="nowrap table-code">
+                    <h5><code{% if opt.enable == false %} class="text-muted"{% endif %}>{{ opt.opt }}</code></h5>
+                </td>
+                <td>
+                    <h5{% if opt.enable == false %} class="text-muted"{% endif %}>{{ opt.name }}</h5>
+                    <span class="desc {% if opt.enable == false %}text-muted{% endif %}">{{ opt.desc }}</span>
+                </td>
                 {% assign val = opt.val %}
                 <td>{% include_relative _layout/value.html %}</td>
                 {% if opt.allowed_vals %}
-                    <td><code{% if opt.enable == false %} class="text-muted"{% endif %}>{{ opt.allowed_vals | array_to_sentence_string }}</code></td>
+                    <td>
+                        <code{% if opt.enable == false %} class="text-muted"{% endif %}>
+                            {{ opt.allowed_vals | array_to_sentence_string }}
+                        </code>
+                    </td>
                 {% elsif opt.min_max_vals %}
-                    <td><code{% if opt.enable == false %} class="text-muted"{% endif %}>from {{ opt.min_max_vals[0] }} to {{ opt.min_max_vals[1] }}</code></td>
+                    <td>
+                        <code{% if opt.enable == false %} class="text-muted"{% endif %}>
+                            from {{ opt.min_max_vals[0] }} to {{ opt.min_max_vals[1] }}
+                        </code>
+                    </td>
                 {% endif %}
-                <td><code{% if opt.enable == false %} class="text-muted"{% endif %}>{{ opt.default_val }}</code></td>
+                <td>
+                    <code{% if opt.enable == false %} class="text-muted"{% endif %}>
+                        {{ opt.default_val }}
+                    </code>
+                </td>
             </tr>
         {% endfor %}
         </tbody>

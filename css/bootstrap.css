@@ -1446,6 +1446,10 @@ p
         font-size: 21px;
     }
 }
+.desc
+{
+    white-space: pre-wrap;
+}
 small,
 .small
 {
@@ -2754,6 +2758,52 @@ th
 .table > tfoot > tr > td.table-code
 {
     max-width: 30%;
+}
+.table > thead > tr > th h4,
+.table > tbody > tr > th h4,
+.table > tfoot > tr > th h4,
+.table > thead > tr > td h4,
+.table > tbody > tr > td h4,
+.table > tfoot > tr > td h4,
+.table > thead > tr > th h5,
+.table > tbody > tr > th h5,
+.table > tfoot > tr > th h5,
+.table > thead > tr > td h5,
+.table > tbody > tr > td h5,
+.table > tfoot > tr > td h5,
+.table > thead > tr > th h6,
+.table > tbody > tr > th h6,
+.table > tfoot > tr > th h6,
+.table > thead > tr > td h6,
+.table > tbody > tr > td h6,
+.table > tfoot > tr > td h6,
+.table > thead > tr > th .h4,
+.table > tbody > tr > th .h4,
+.table > tfoot > tr > th .h4,
+.table > thead > tr > td .h4,
+.table > tbody > tr > td .h4,
+.table > tfoot > tr > td .h4,
+.table > thead > tr > th .h5,
+.table > tbody > tr > th .h5,
+.table > tfoot > tr > th .h5,
+.table > thead > tr > td .h5,
+.table > tbody > tr > td .h5,
+.table > tfoot > tr > td .h5,
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td,
+.table > thead > tr > th h6,
+.table > tbody > tr > th h6,
+.table > tfoot > tr > th h6,
+.table > thead > tr > td h6,
+.table > tbody > tr > td h6,
+.table > tfoot > tr > td h6
+{
+    margin-top: 0;
+    margin-bottom: 0;
 }
 .table > thead > tr > th
 {
