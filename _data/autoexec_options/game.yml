@@ -58,7 +58,7 @@
   desc: |
     Enable/Disable popup message that can show up when connecting to a community (non-official Valve server)
     0 &ndash; Enable community server messages
-    1 &ndash; Disalbe community server messages
+    1 &ndash; Disable community server messages
   val: 0
 
 - opt: cl_downloadfilter
@@ -77,7 +77,7 @@
   default_val: 0
   name: Disable HTML-based MOTDs (Messages of the Day)
   desc: |
-    Allows you to disable the html motds that popup before team selection when connecting to a server. Recommend 1 as it disables flash videos that sometimes annoyingly popup on connect.
+    Allows you to disable the html motds that popup before team selection when connecting to a server. Recommend 1 as it disables flash videos that sometimes annoyingly popup on connect. Note: This needs to be set to off to connect to CEVO PUG & Scrim Servers.
     0 &ndash; Enable
     1 &ndash; Disable
   val: 1
@@ -115,14 +115,15 @@
 
 - opt: cl_spec_mode
   enable: true
-  allowed_vals: [4,5]
+  allowed_vals: [0,4,5]
   default_val: "0 (random)"
   name: Default Spectator Mode
   desc: |
     Sets the default spectator mode (between thirdperson and firstperson perspectives)
-    0 &ndash; default (random? not sure what the effect is)
+    0 &ndash; default (random? &mdash unverified)
     4 &ndash; firstperson (automatically spectate in firstperson on death or in spectator slots)
     5 &ndash; thirdperson (same as above but in thirdperson, will still default to firstperson if server blocks thirdperson specators)
+  val: 4
 
 - opt: spec_usenumberkeys_nobinds
   enable: true

@@ -31,8 +31,8 @@
   default_val: 0.03125
   name: Interpolation Value (Delay)
   desc: |
-    Generally good to be as low as possible, look this up as it gets quite complicated
-    0 should autoset this to the lowest your client is capable of
+    Generally good to be as low as possible, this gets quite complicated (See: <a href=https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking#Entity_interpolation>Valve Developer Wiki: Source Multiplayer Networking</a> for more info)
+    A value of 0 should autoset this to the lowest your client is capable of
   val: 0
 
 - opt: cl_interp_ratio
@@ -41,7 +41,7 @@
   default_val: 2.0
   name: Interpolation Ratio
   desc: |
-    Used as a ratio to calculate your lowest cl_interp value (look this up if you want to again)
+    Used as a ratio to calculate your lowest cl_interp value (See: <a href=https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking#Entity_interpolation>Valve Developer Wiki: Source Multiplayer Networking</a> for more info)
     Recommend that you set this to 1 for best results.
   val: 1
 
