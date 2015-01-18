@@ -37,5 +37,5 @@
   default_val: "Echos the string given to it in console (prints it in console)"
   name: Echo Utility
   desc: |
-    Echos text. You can use this along with the launch option (-console) to check that your autoexec has run every time you open the game.
+    Echos text. You can use this along with the launch option (-console) to check that your autoexec has run every time you open the game. (See: <a href=/csgo/launch-opts/>Launch Options</a> for more information about -console)
   val: "N/A"
