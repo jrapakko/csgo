@@ -22,7 +22,7 @@
   min_max_vals: [0,"&infin;?"]
   default_val: 5
 
-- opt: cl_crosshairthickenss
+- opt: cl_crosshairthickness
   enable: true
   min_max_vals: [0.1,3.0]
   default_val: 0.5
