@@ -11,93 +11,186 @@
   enable: true
   allowed_vals: [0,1,2,3,4,5]
   default_val: 2
+  name: Crosshair Style
+  desc: |
+    The style of the crosshair
+    0 default (spreads while moving and shooting)
+    1 default static (completely static, default style)
+    2 classic (spreadys while moving and shooting, with additional markings for spread)
+    3 classic dynamic (spreads while moving and shooting)
+    4 classic static (completely static)
+    5 classic 1.6/CS:S style (only spreads while shooting)
+  val: 4
 
 - opt: cl_crosshairdot
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Crosshair Dot
+  desc: |
+    Toggles the dot at the center of the crosshair
+  val: 0
 
 - opt: cl_crosshairsize
   enable: true
   min_max_vals: [0,"&infin;?"]
   default_val: 5
+  name: Crosshair Size
+  desc: |
+    Sets the size of the crosshair
+  val: 3
 
 - opt: cl_crosshairthickness
   enable: true
   min_max_vals: [0.1,3.0]
   default_val: 0.5
+  name: Crosshair Thickness
+  desc: |
+    Sets the thickenss of the crosshair
+  val: 0.1
 
 - opt: cl_crosshairgap
   enable: true
   min_max_vals: ["-&infin;?","&infin;?"]
   default_val: 1
+  name: Crosshair Gap
+  desc: |
+    Adjusts the size of the gap between the crosshair hatches
+  val: 1
 
 - opt: cl_fixedcrosshairgap
   enable: true
   min_max_vals: ["-&infin;?","&infin;?"]
   default_val: 3
+  name: Fixed Crosshair Gap
+  desc: |
+    How big to make the gap between the crosshair hatches
+  val: 3
 
 - opt: cl_crosshairgap_useweaponvalue
   enable: true
   allowed_vals: [0,1]
   default_val: 0
+  name: Dynamic Weapon Crosshair Gap
+  desc: |
+    Toggles whether to dynamically update the crosshair gap based on the weapon currently being used
+  val: 0
 
 - opt: cl_crosshair_drawoutline
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Crosshair Outline
+  desc: |
+    Toggles whether to draw an outline around the crosshair
+  val: 0
 
 - opt: cl_crosshair_outlinethickness
   enable: true
   min_max_vals: [0.1,3.0]
   default_val: 1
+  name: Crosshair Outline Thickness
+  desc: |
+    Sets the thickness of the outline around the crosshair if the outline is enabled
+  val: 0.1
 
 - opt: cl_crosshaircolor
   enable: true
   allowed_vals: [0,1,2,3,4,5]
   default_val: 1
+  name: Crosshair Color
+  desc: |
+    Sets the crosshair color
+    0 Red
+    1 Green
+    2 yellow
+    3 Blue
+    4 Cyan
+    5 Custom Color (using r,g,b)
+  val: 5
 
 - opt: cl_crosshaircolor_r
   enable: true
   min_max_vals: [0,255]
   default_val: 1
+  name: Crosshair Color (Red)
+  desc: |
+    How much red to use for the crosshair color
+  val: 250
 
 - opt: cl_crosshaircolor_g
   enable: true
   min_max_vals: [0,255]
   default_val: 1
+  name: Crosshair Color (Green)
+  desc: |
+    How much green to use for the crosshair color
+  val: 150
 
 - opt: cl_crosshaircolor_b
   enable: true
   min_max_vals: [0,255]
   default_val: 1
+  name: Crosshair Color (Blue)
+  desc: |
+    How much blue to use for the crosshair color
+  val: 200
 
 - opt: cl_crosshairusealpha
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Crosshair Transparency Enable
+  desc: |
+    Toggles whether to use the alpha value for crosshair trasparency
+  val: 1
 
 - opt: cl_crosshairalpha
   enable: true
   min_max_vals: [0,255]
   default_val: 200
+  name: Crosshair Alpha (Transparency)
+  desc: |
+    How transparent the crosshair should be
+  val: 255
 
 - opt: cl_crosshair_dynamic_maxdist_splitratio
   enable: true
   min_max_vals: ["0.000000","1.000000"]
-  default_val: 1
+  default_val: 0.35
+  name: Ratio for Inner and Outer Pips
+  desc: |
+    Must use cl_crosshairstyle 2
+    Ratio to determine how long the inner and outer pips will be
+  val: 1
 
 - opt: cl_crosshair_dynamic_splitalpha_innermod
   enable: true
   min_max_vals: ["0.000000","1.000000"]
   default_val: 1
+  name: Inner Split Alpha Modification
+  desc: |
+    Must use cl_crosshairstyle 2
+    Alpha modification for inner crosshair pips once they've split
+  val: 0
 
 - opt: cl_crosshair_dynamic_splitalpha_outermod
   enable: true
   min_max_vals: ["0.300000","1.000000"]
-  default_val: 1
+  default_val: 0.5
+  name: Outer Split Alpha Modification
+  desc: |
+    Must use cl_crosshairstyle 2
+    Alpha modification for outer crosshair pips once they've split
+  val: 1
 
 - opt: cl_crosshair_dynamic_splitdist
   enable: true
   min_max_vals: [0,"&infin;?"]
   default_val: 7
+  name: Pip Split Distance
+  desc: |
+    Must use cl_crosshairstyle 2
+    The distance that the crosshair pips will split into 2
+  val: 0
+
