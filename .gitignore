@@ -157,4 +157,4 @@ Gemfile.lock
 
 
 # for incremental jekyll builds
-jekyll-metadata
+.jekyll-metadata
