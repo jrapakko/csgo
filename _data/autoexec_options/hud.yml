@@ -11,36 +11,75 @@
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Weapon Color Names
+  desc: |
+    Toggles whether to set the weapon text color to the rarity of the weapon
+  val: 1
 
 - opt: cl_hud_color
   enable: true
   allowed_vals: [0,1,2,3,4,5,6,7,8,9,10]
   default_val: 0
+  name: HUD Color
+  desc: |
+    Sets color of the HUD:
+    0 Default
+    1 Aqua
+    2 Green
+    3 Yellow
+    4 Orange
+    5 Red
+    6 Pink
+    7 Purple
+    8 Blue
+    9 Light Blue
+    10 White
+  val: 6
 
 - opt: cl_hud_background_alpha
   enable: true
   min_max_vals: ["0.000000","1.000000"]
   default_val: 0.5
+  name: HUD Background Alpha Value (Transparency)
+  desc: |
+    Sets the transparency of the HUD
+  val: 0.5
 
 - opt: cl_hud_playercount_showcount
   enable: true
   allowed_vals: [0,1]
   default_val: 0
+  name: Show Player Count
+  desc: |
+    Toggles whether to show player icons or count of players alive
+  val: 1
 
 - opt: cl_hud_playercount_pos
   enable: true
   allowed_vals: [0,1]
   default_val: 0
+  name: Player Count Position
+  desc: |
+    Toggles where to show player count (0 at top, 1 at bottom)
+  val: 0
 
 - opt: cl_hud_bomb_under_radar
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Bomb HUD Position
+  desc: |
+    Toggles whether to show the bomb under the radar on the HUD as well as in inventory
+  val: 0
 
 - opt: cl_hud_healthammo_style
   enable: true
   allowed_vals: [0,1]
   default_val: 0
+  name: Health & Ammo HUD styling
+  desc: |
+    Toggles whether to show health and ammuntion as simple numbers or with bars showing their value
+  val: 1
 
 - opt: hud_scaling
   enable: true
@@ -48,60 +87,109 @@
   default_val: 1.0
   name: Size of the HUD
   desc: |
-    The size of the HUD as a percentage of largest possible (1)
+    The size of the HUD as a percentage of maximum (1)
   val: 1.0
 
 - opt: cl_teammate_colors_show
   enable: true
   allowed_vals: [0,1,2]
   default_val: 1
+  name: Teammate Colors
+  desc: |
+    Toggles whether to show teammate colors on radar as well as in games, also can give letter of color name on radar
+  val: 2
 
 - opt: cl_color
   enable: true
   allowed_vals: [0,1,2,3,4]
   default_val: 0
+  name: Player Color
+  desc: |
+    Set the color that your teammates should see by default while in game (on minimap, etc.) -- your color:
+    0 Yellow
+    1 Purple
+    2 Green
+    3 Blue
+    4 Orange
+  val: 3
 
 - opt: cl_radar_always_centered
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Center Radar Around Player
+  desc: |
+    Toggles whether to center the radar based on your player position
+  val: 0
 
 - opt: cl_radar_rotate
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Radar Rotation
+  desc: |
+    Toggles whether to rotate the radar based on the direciton your are facing
+  val: 1
 
 - opt: cl_radar_icon_scale_min 
   enable: true
   min_max_vals: ["0.400000","1.000000"]
   default_val: 0.6
+  name: Minimum Icon Scale
+  desc: |
+    Sets the minimum icon scale on the radar (aka the size of teammates on the radar)
+  val: 0.6
 
 - opt: cl_hud_radar_scale
   enable: true
-  min_max_vals: ["0.250000","1.000000"]
+  min_max_vals: ["0.800000","1.300000"]
   default_val: 0.7
+  name: Size/Scale of the Radar within the HUD
+  desc: |
+    Scaling of the radar within the HUD
+  val: 1.25
 
 - opt: cl_radar_scale
   enable: true
-  allowed_vals: [0,1]
+  allowed_vals: ["0.250000","1.000000"]
   default_val: 1
+  name: Size/Scale of the map within the radar
+  desc: |
+    Scaling of the map size within the radar (smaller shows more of the map, larger closer detail)
+  val: 0.25
 
 - opt: cl_radar_square_with_scoreboard
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Change Radar to Square when Scoreboard Open
+  desc: |
+    Toggles whether to change radar from circle to square while scoreboard is open on screen
+  val: 1
 
 - opt: cl_showfps
   enable: false
   allowed_vals: [0,1]
   default_val: 0
+  name: Show FPS
+  desc: |
+    Toggles whether to show current FPS (frames per second)
+  val: 0
 
 - opt: cl_scoreboard_mouse_enable_binding
   enable: true
   allowed_vals: ["name of the binding to enable selection in scoreboard"]
   default_val: "+attack2"
+  name: Binding to use for selection in scoreboard
+  desc: |
+    Sets the binding to use to be able to select player names in scoreboard (default is right click/+attack2)
+  val: +attack2
 
 - opt: hud_showtargetid
   enable: true
   allowed_vals: [0,1]
   default_val: 1
+  name: Show Enemy Player Name
+  desc: |
+    Toggles whether to show red text when crosshair pointing at an enemy players
+  val: 0

@@ -37,7 +37,7 @@
             </div>
         </div>
         {% include scripts.html %}
-        <!--{% if page.page_specific_scripts != empty %}  -- should be implied by for loop -->
+        <!--{% if page.page_specific_scripts != empty %}  -- page-specific scripts should be implied by for loop -->
             {% for script in page.page_specific_scripts %}
                 <script src="{{ site.baseurl }}/js/{{ script }}"></script>
             {% endfor %}
