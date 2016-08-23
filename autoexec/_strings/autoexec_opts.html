@@ -2,7 +2,28 @@
 {% for opt in opts[0] %}
     "{{ opt.opt }}": {
         "opt": "{{ opt.opt }}",
-        "enable": "",
-        "value": ""
+        "enable": "false",
+        "value": "",
+        "default_val": {{ opt.default_val | jsonify }},
+        {% if opt.allowed_vals %}
+        	"validation": "allowed_vals",
+        	"allowed_vals": {{ opt.allowed_vals | jsonify }}
+        {% elsif opt.min_max_vals %}
+        	{% if opt.min_max_vals[0] == "&infin;" %}
+        		{% if opt.min_max_vals[1] == "&infin;" %}
+        			"validation": "none",
+        		{% else %}
+        			"validation": "max",
+        		{% endif %}
+        	{% elsif opt.min_max_vals[1] == "&infin;" %}
+        		"validation": "min",
+        	{% else %}
+        		"validation": "min_max",
+        	{% endif %}
+        	"min_max_vals": {
+        		"min": {{ opt.min_max_vals[0] | jsonify }},
+        		"max": {{ opt.min_max_vals[1] | jsonify }}
+        	}
+        {% endif %}
     }{% if forloop.last == false %},{% endif %}
 {% endfor %}

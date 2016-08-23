@@ -26,8 +26,16 @@
   enable: false
   allowed_vals: [0,1]
   default_val: 0
+  name: Developer Toggle
+  desc: |
+    Toggles developer mode (1 is on, 0 is off)
+  val: 0
 
 - opt: echo
   enable: true
   allowed_vals: ["N/A"]
   default_val: "Echos the string given to it in console (prints it in console)"
+  name: Echo Utility
+  desc: |
+    Echos text. You can use this along with the launch option (-console) to check that your autoexec has run every time you open the game. (See: <a href=/csgo/launch-opts/>Launch Options</a> for more information about -console)
+  val: "N/A"
