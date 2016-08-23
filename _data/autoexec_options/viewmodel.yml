@@ -2,6 +2,14 @@
   enable: true
   allowed_vals: [0,1,2,3]
   default_val: 1
+  name: "Viewmodel Position"
+  desc: |
+    Sets the position of the viewmodel
+    0 Enable using viewmodel_offset_x, viewmodel_offset_y, & viewmodel_offset_z
+    1 Desktop position
+    2 Couch position
+    3 Classic position
+  val: 0
 
 - opt: viewmodel_fov
   enable: true
@@ -16,43 +24,80 @@
   enable: true
   min_max_vals: ["-2.000000","2.500000"]
   default_val: 0.0
+  name: Viewmodel Offset Lateral
+  desc: |
+    Moves the viewmodel laterally (in the x-direction)
+  val: -2.0
 
 - opt: viewmodel_offset_y
   enable: true
   min_max_vals: ["-2.000000","2.000000"]
   default_val: 0.0
+  name: Viewmodel Offset Vertical
+  desc: |
+    Moves the viewmodel vertically (in the y-direction)
+  val: -2.0
 
 - opt: viewmodel_offset_z
   enable: true
   min_max_vals: ["-2.000000","2.000000"]
   default_val: 0.0
+  name: View Model Offset "Z-Direction"
+  desc: |
+    Moves the viewmodel towards/away from your perspective (in the z-direction)
+  val: -2.0
 
 - opt: cl_viewmodel_shift_left_amt
   enable: true
   min_max_vals: [0.5,2.0]
   default_val: 1.5
+  name: Viewmodel Shift Left
+  desc: |
+    The amount the viewmodel shifts back to the left when shooting accuracy increases
+  val: 0.5
 
 - opt: cl_viewmodel_shift_right_amt
   enable: true
   min_max_vals: [0.25,2.0]
   default_val: 0.75
+  name: Viewmodel Shift Right
+  desc: |
+    The amount the viewmodel shifts to the right when shooting accuracy decreases
+  val: 0.5
+
 
 - opt: cl_bob_loweramt
   enable: true
   min_max_vals: [5,30]
   default_val: 21
+  name: Viewmodel Lower Bob
+  desc: |
+    The amount the viewmodel lowers when running
+  val: 30
 
 - opt: cl_bobamt_lat
   enable: true
   min_max_vals: [0.1,2.0]
   default_val: 0.4
+  name: Viewmodel Lateral Bob
+  desc: |
+    The amount the viewmodel moves from side to sdie when running
+  val: 0.1
 
 - opt: cl_bobamt_vert
   enable: true
   min_max_vals: [0.1,2.0]
   default_val: 0.25
+  name: Viewmodel Vertical Bob
+  desc: |
+    The amount the viewmodel moves up and down while running
+  val: 0.1
 
 - opt: cl_bobcycle
   enable: true
   min_max_vals: [0.1,2.0]
   default_val: 0.98
+  name: Viewmodel Bob Frequency
+  desc: |
+    The frequency at which the viewmodel bobs (how often the viewmodel moves up and down)
+  val: 2
