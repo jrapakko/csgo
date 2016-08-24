@@ -14,6 +14,7 @@
     data (packet size, data rates & packet rates)
     server simulation time (and std deviation)
   val: 1
+  input_type: toggle
 
 - opt: net_graphpos
   enable: false
@@ -25,6 +26,7 @@
     2 - middle
     3 - far left
   val: 0
+  input_type: dropdown
 
 - opt: net_graphheight
   enable: false
@@ -35,6 +37,7 @@
     Where on the screen to position the net graph
     value refers to what pixel the top of the graph is drawn downward from
   val: 32
+  input_type: slider
 
 - opt: net_graphproportionalfont
   enable: false
@@ -44,3 +47,4 @@
   desc: |
     Enable/Disable Net Graph font being proportional to screen size (resolution)
   val: 0
+  input_type: toggle

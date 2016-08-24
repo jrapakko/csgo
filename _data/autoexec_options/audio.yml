@@ -10,6 +10,7 @@
     &nbsp;&nbsp;4 &ndash; 2 Speakers (Stereo)
     &nbsp;&nbsp;6 &ndash; 5.1 Surround Sound
   val: 1
+  input_type: dropdown
 
 - opt: snd_mixahead
   enable: true
@@ -20,6 +21,7 @@
     Lower delays can result in reduced sound quality and increased CPU lag
     Recommended you set this as low as possible without any adverse effects
   val: 0.05
+  input_type: slider
 
 - opt: snd_headphone_pan_exponent
   enable: true
@@ -29,6 +31,7 @@
   desc: |
     Weights the direction of sounds
   val: 2.0
+  input_type: slider
 
 - opt: snd_headphone_pan_radial_weight
   enable: true
@@ -38,6 +41,7 @@
   desc: |
     Changes the computation method for direction of sounds
   val: 2
+  input_type: dropdown
 
 - opt: snd_legacy_surround
   enable: true
@@ -47,6 +51,7 @@
   desc: |
     Enables/Disables legacy (emulated) surround sound
   val: 0
+  input_type: toggle
 
 - opt: snd_mute_losefocus
   enable: true
@@ -56,6 +61,7 @@
   desc: |
     Mutes the game when in focus or minimized
   val: 0
+  input_type: toggle
 
 - opt: volume
   enable: true
@@ -65,6 +71,7 @@
   desc: |
     Sets the game's master volume
   val: 1
+  input_type: slider
 
 - opt: snd_musicvolume
   enable: true
@@ -74,6 +81,7 @@
   desc: |
     Sets the volume of game music
   val: 0
+  input_type: slider
 
 - opt: voice_enable
   enable: true
@@ -83,6 +91,7 @@
   desc: |
     Enables voice chat
   val: 1
+  input_type: toggle
 
 - opt: voice_scale
   enable: true
@@ -92,6 +101,7 @@
   desc: |
     Sets the volume of voice communications
   val: 0.8
+  input_type: slider
 
 - opt: lobby_voice_chat_enabled
   enable: true
@@ -101,3 +111,4 @@
   desc: |
     Default voice setting when joining a lobby (On/Off)
   val: 0
+  input_type: toggle

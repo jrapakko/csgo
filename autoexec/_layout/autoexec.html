@@ -31,6 +31,7 @@
                     <span class="desc {% if opt.enable == false %}text-muted{% endif %}">{{ opt.desc }}</span>
                 </td>
                 {% assign val = opt.val %}
+                {% assign input_type = opt.input_type %}
                 <td>{% include_relative _layout/value.html %}</td>
                 {% if opt.allowed_vals %}
                     <td>

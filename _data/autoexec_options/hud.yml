@@ -6,6 +6,7 @@
   desc: |
     Toggles whether to share the current loadout at all time on the right side of the screen
   val: 1
+  input_type: toggle
 
 - opt: cl_loadout_colorweaponnames
   enable: true
@@ -15,6 +16,7 @@
   desc: |
     Toggles whether to set the weapon text color to the rarity of the weapon
   val: 1
+  input_type: toggle
 
 - opt: cl_hud_color
   enable: true
@@ -35,6 +37,7 @@
     9 Light Blue
     10 White
   val: 6
+  input_type: color-dropdown
 
 - opt: cl_hud_background_alpha
   enable: true
@@ -44,6 +47,7 @@
   desc: |
     Sets the transparency of the HUD
   val: 0.5
+  input_type: slider
 
 - opt: cl_hud_playercount_showcount
   enable: true
@@ -53,6 +57,7 @@
   desc: |
     Toggles whether to show player icons or count of players alive
   val: 1
+  input--type: toggle
 
 - opt: cl_hud_playercount_pos
   enable: true
@@ -62,6 +67,7 @@
   desc: |
     Toggles where to show player count (0 at top, 1 at bottom)
   val: 0
+  input_type: toggle
 
 - opt: cl_hud_bomb_under_radar
   enable: true
@@ -71,6 +77,7 @@
   desc: |
     Toggles whether to show the bomb under the radar on the HUD as well as in inventory
   val: 0
+  input_type: toggle
 
 - opt: cl_hud_healthammo_style
   enable: true
@@ -80,6 +87,7 @@
   desc: |
     Toggles whether to show health and ammuntion as simple numbers or with bars showing their value
   val: 1
+  input_type: toggle
 
 - opt: hud_scaling
   enable: true
@@ -89,6 +97,7 @@
   desc: |
     The size of the HUD as a percentage of maximum (1)
   val: 1.0
+  input_type: slider
 
 - opt: cl_teammate_colors_show
   enable: true
@@ -98,6 +107,7 @@
   desc: |
     Toggles whether to show teammate colors on radar as well as in games, also can give letter of color name on radar
   val: 2
+  input_type: dropdown
 
 - opt: cl_color
   enable: true
@@ -112,6 +122,7 @@
     3 Blue
     4 Orange
   val: 3
+  input_type: color-dropdown
 
 - opt: cl_radar_always_centered
   enable: true
@@ -121,6 +132,7 @@
   desc: |
     Toggles whether to center the radar based on your player position
   val: 0
+  input_type: toggle
 
 - opt: cl_radar_rotate
   enable: true
@@ -130,6 +142,7 @@
   desc: |
     Toggles whether to rotate the radar based on the direciton your are facing
   val: 1
+  input_type: toggle
 
 - opt: cl_radar_icon_scale_min 
   enable: true
@@ -139,6 +152,7 @@
   desc: |
     Sets the minimum icon scale on the radar (aka the size of teammates on the radar)
   val: 0.6
+  input_type: slider
 
 - opt: cl_hud_radar_scale
   enable: true
@@ -148,6 +162,7 @@
   desc: |
     Scaling of the radar within the HUD
   val: 1.25
+  input_type: slider
 
 - opt: cl_radar_scale
   enable: true
@@ -157,6 +172,7 @@
   desc: |
     Scaling of the map size within the radar (smaller shows more of the map, larger closer detail)
   val: 0.25
+  input_type: slider
 
 - opt: cl_radar_square_with_scoreboard
   enable: true
@@ -166,6 +182,7 @@
   desc: |
     Toggles whether to change radar from circle to square while scoreboard is open on screen
   val: 1
+  input_type: toggle
 
 - opt: cl_showfps
   enable: false
@@ -175,6 +192,7 @@
   desc: |
     Toggles whether to show current FPS (frames per second)
   val: 0
+  input_type: toggle
 
 - opt: cl_scoreboard_mouse_enable_binding
   enable: true
@@ -184,6 +202,7 @@
   desc: |
     Sets the binding to use to be able to select player names in scoreboard (default is right click/+attack2)
   val: +attack2
+  input_type: text
 
 - opt: hud_showtargetid
   enable: true
@@ -193,3 +212,4 @@
   desc: |
     Toggles whether to show red text when crosshair pointing at an enemy players
   val: 0
+  input_type: toggle

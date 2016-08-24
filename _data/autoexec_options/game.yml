@@ -7,6 +7,7 @@
     0 &ndash; Lefthanded Model
     1 &ndash; Righthanded Model
   val: 0
+  input_type: toggle
 
 - opt: gameinstructor_enable
   enable: true
@@ -18,6 +19,7 @@
     0 &ndash; Disable
     1 &ndash; Enable
   val: 0
+  input_type: toggle
 
 - opt: cl_autohelp
   enable: true
@@ -29,6 +31,7 @@
     0 &ndash; Disable
     1 &ndash; Enable
   val: 0
+  input_type: toggle
 
 - opt: cl_showhelp
   enable: true
@@ -40,6 +43,7 @@
     0 &ndash; Disable
     1 &ndash; Enable
   val: 0
+  input_type: toggle
 
 - opt: cl_clanid
   enable: false
@@ -49,6 +53,7 @@
   desc: |
     Enter the id of the steamgroup you want your nick to automatically show up as a part of
   val: 0
+  input_type: text
 
 - opt: player_nevershow_communityservermessage
   enable: true
@@ -60,6 +65,7 @@
     0 &ndash; Enable community server messages
     1 &ndash; Disable community server messages
   val: 0
+  input_type: toggle
 
 - opt: cl_downloadfilter
   enable: true
@@ -70,6 +76,7 @@
     Allows you to filter custom file downloads from servers (community servers)
     Setting this to all can make custom gamemodes and break and not allow you to download maps from servers so recommend this is set to none or nosounds
   val: "nosounds"
+  input_type: dropdown
 
 - opt: cl_disablehtmlmotd
   enable: true
@@ -81,6 +88,7 @@
     0 &ndash; Enable
     1 &ndash; Disable
   val: 1
+  input_type: toggle
 
 - opt: cl_disablefreezecam
   enable: true
@@ -92,6 +100,7 @@
     0 &ndash; Enable freezecam
     1 &ndash; Disable freezecam
   val: 1
+  input_type: toggle
 
 - opt: cl_freezecameffects_showholiday
   enable: true
@@ -103,6 +112,7 @@
     0 &ndash; Disable
     1 &ndash; Enable
   val: 0
+  input_type: toggle
 
 - opt: cl_showclan_in_death_notice
   enable: true
@@ -112,6 +122,7 @@
   desc: |
     Shows the clan names (eg steam group names) of the player dead, the player with the frag (and assist)
   val: 1
+  input_type: toggle
 
 - opt: cl_spec_mode
   enable: true
@@ -124,6 +135,7 @@
     4 &ndash; firstperson (automatically spectate in firstperson on death or in spectator slots)
     5 &ndash; thirdperson (same as above but in thirdperson, will still default to firstperson if server blocks thirdperson specators)
   val: 4
+  input_type: dropdown
 
 - opt: spec_usenumberkeys_nobinds
   enable: true
@@ -135,6 +147,7 @@
     0 &ndash; Use Binds
     1 &ndash; Use Number Keys
   val: 1
+  input_type: toggle
 
 - opt: cl_obs_interp_enable
   enable: false
@@ -146,6 +159,7 @@
     0 &ndash; Don't Smooth Spectator Camera
     1 &ndash; Smooth Spectator Camera
   val: 1
+  input_type: toggle
 
 - opt: cl_autowepswitch
   enable: true
@@ -158,6 +172,7 @@
     0 &ndash; Don't switch to picked up weapon
     1 &ndash; Switch to picked up weapon
   val: 0
+  input_type: toggle
 
 - opt: cl_use_opens_buy_menu
   enable: true
@@ -169,6 +184,7 @@
     0 &ndash; Use key doesn't open buy menu
     1 &ndash; Use key opens buy menu
   val: 0
+  input_type: toggle
 
 - opt: closeonbuy
   enable: true
@@ -180,6 +196,7 @@
     0 &ndash; Buy menu stays open after buying an item
     1 &ndash; Buy menu closes after each buy
   val: 1
+  input_type: toggle
 
 - opt: option_duck_method
   enable: true
@@ -191,6 +208,7 @@
     0 &ndash; Hold key to duck
     1 &ndash; Toggle duck/stand by pressing key
   val: 0
+  input_type: toggle
 
 - opt: option_speed_method
   enable: true
@@ -202,6 +220,7 @@
     0 &ndash; Hold key to walk
     1 &ndash; Toggle walk/stand(run) by pressing key
   val: 0
+  input_type: toggle
 
 - opt: hud_takesshots 
   enable: false
@@ -213,6 +232,7 @@
     0 &ndash; No automatic screenshots
     1 &ndash; Automatic screenshots on end of game/mapchange
   val: 0
+  input_type: toggle
 
 - opt: ui_steam_overlay_notification_position
   enable: true
@@ -223,6 +243,7 @@
     Sets the position where steam overlay messages show up.
     Recommend not in top left (blocks radar) and prefer to keep it in the top right so it doesn't cover hp/armor or loadout/ammunition portions of the hud
   val: "topright"
+  input_type: dropdown
 
 - opt: cl_showpluginmessages
   enable: false
@@ -233,3 +254,4 @@
     When playing (mostly on custom servers), show messages from plugins such as gun menus for non-official deathmatch, rank, etc.
     Don't see any real reason to have this off
   val: 1
+  input_type: toggle

@@ -1,1 +1,11 @@
-<input type="text" placeholder="{{ val }}" style="width: 72px;"{% if opt.enable == false %} disabled{% endif %}>
+{% if input_type == "toggle" %}
+    
+    <label class="checkbox-inline">
+        <input type="checkbox" checked data-toggle="toggle" data-on="{{ opt.allowed_vals[1] }}" data-off="{{ opt.allowed_vals[0] }}" data-onstyle="info" data-offstyle="danger">
+    </label>
+
+{% else %}
+
+    <input type="text" placeholder="{{ val }}" style="width: 72px;"{% if opt.enable == false %} disabled{% endif %}>
+
+{% endif %}

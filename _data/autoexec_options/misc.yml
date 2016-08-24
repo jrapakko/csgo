@@ -6,6 +6,7 @@
   desc: |
     This needs to be at the end of an autoexec.cfg for changes to stick on game launch
   val: "N/A"
+  input_type: none
 
 - opt: con_filter_enable
   enable: false
@@ -15,6 +16,7 @@
   desc: |
     1 filters completely, 2 displayrs filtered text brighter than other text
   val: 0
+  input_type: dropdown
 
 - opt: con_filter_text
   enable: false
@@ -24,6 +26,7 @@
   desc: |
     Text that gets searched for/filtered in when con_filter_enable is enabled
   val: ""
+  input_type: text
 
 - opt: con_filter_text_out
   enable: false
@@ -33,6 +36,7 @@
   desc: |
     Text to filter OUT of console spew
   val: ""
+  input_type: text
 
 - opt: developer
   enable: false
@@ -42,6 +46,7 @@
   desc: |
     Toggles developer mode (1 is on, 0 is off)
   val: 0
+  input_type: toggle
 
 - opt: echo
   enable: true
@@ -51,3 +56,4 @@
   desc: |
     Echoes text. You can use this along with the launch option (-console) to check that your autoexec has run every time you open the game. (See: <a href=/csgo/launch-opts/>Launch Options</a> for more information about -console)
   val: "N/A"
+  input_type: none

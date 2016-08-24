@@ -6,6 +6,7 @@
   desc: |
     This is the throughput you can send messages to the server in b/s (often enforced to some degree by server)
   val: 128000
+  input_type: slider
 
 - opt: cl_cmdrate
   enable: true
@@ -15,6 +16,8 @@
   desc: |
     This is the rate you send commands to the server (generally enforced by the server)
   val: 128
+  input_type: slider
+
 
 - opt: cl_updaterate
   enable: true
@@ -24,6 +27,7 @@
   desc: |
     This is the rate you receive updates from the server (generally enforced by the server)
   val: 128
+  input_type: slider
 
 - opt: cl_interp
   enable: true
@@ -34,6 +38,7 @@
     Generally good to be as low as possible, this gets quite complicated (See: <a href=https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking#Entity_interpolation>Valve Developer Wiki: Source Multiplayer Networking</a> for more info)
     A value of 0 should autoset this to the lowest your client is capable of
   val: 0
+  input_type: slider
 
 - opt: cl_interp_ratio
   enable: true
@@ -44,6 +49,7 @@
     Used as a ratio to calculate your lowest cl_interp value (See: <a href=https://developer.valvesoftware.com/wiki/Source_Multiplayer_Networking#Entity_interpolation>Valve Developer Wiki: Source Multiplayer Networking</a> for more info)
     Recommend that you set this to 1 for best results.
   val: 1
+  input_type: slider
 
 - opt: cl_resend
   enable: true
@@ -53,6 +59,7 @@
   desc: |
     The delay betwen each attempt to connect to a server (6 seconds seems a bit high to me)
   val: 3
+  input_type: slider
 
 - opt: cl_resend_timeout
   enable: true
@@ -63,6 +70,7 @@
     The amount of time that resend attempts are sent before it is considered that you cannot connect (you are timed out)
     Divide this number by your resend delay (cl_resend) to set the number of timeouts (or multiply cl_resend by the number of attempts you want to use)
   val: 9
+  input_type: slider
 
 - opt: mm_dedicated_search_maxping
   enable: true
@@ -72,3 +80,4 @@
   desc: |
     The maximum latency allowable by a dedicated (Valve official) server that your client will accept as ok (packets are smaller than in game so your actual ping can be a bit higher)
   val: 90
+  input_type: slider

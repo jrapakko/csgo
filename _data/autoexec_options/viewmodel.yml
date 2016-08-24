@@ -10,6 +10,7 @@
     2 Couch position
     3 Classic position
   val: 0
+  input_type: dropdown
 
 - opt: viewmodel_fov
   enable: true
@@ -19,6 +20,7 @@
   desc: |
     Sets the size taken of the field of view by the firstperson viewmodel (gun) as a percentage (higher shows more)
   val: 54.0
+  input_type: slider
 
 - opt: viewmodel_offset_x
   enable: true
@@ -28,6 +30,7 @@
   desc: |
     Moves the viewmodel laterally (in the x-direction)
   val: -2.0
+  input_type: slider
 
 - opt: viewmodel_offset_y
   enable: true
@@ -37,6 +40,7 @@
   desc: |
     Moves the viewmodel vertically (in the y-direction)
   val: -2.0
+  input_type: slider
 
 - opt: viewmodel_offset_z
   enable: true
@@ -46,6 +50,7 @@
   desc: |
     Moves the viewmodel towards/away from your perspective (in the z-direction)
   val: -2.0
+  input_type: slider
 
 - opt: cl_viewmodel_shift_left_amt
   enable: true
@@ -55,6 +60,7 @@
   desc: |
     The amount the viewmodel shifts back to the left when shooting accuracy increases
   val: 0.5
+  input_type: slider
 
 - opt: cl_viewmodel_shift_right_amt
   enable: true
@@ -64,6 +70,7 @@
   desc: |
     The amount the viewmodel shifts to the right when shooting accuracy decreases
   val: 0.5
+  input_type: slider
 
 
 - opt: cl_bob_loweramt
@@ -74,6 +81,7 @@
   desc: |
     The amount the viewmodel lowers when running
   val: 30
+  input_type: slider
 
 - opt: cl_bobamt_lat
   enable: true
@@ -83,6 +91,7 @@
   desc: |
     The amount the viewmodel moves from side to sdie when running
   val: 0.1
+  input_type: slider
 
 - opt: cl_bobamt_vert
   enable: true
@@ -92,6 +101,7 @@
   desc: |
     The amount the viewmodel moves up and down while running
   val: 0.1
+  input_type: slider
 
 - opt: cl_bobcycle
   enable: true
@@ -101,3 +111,4 @@
   desc: |
     The frequency at which the viewmodel bobs (how often the viewmodel moves up and down)
   val: 2
+  input_type: slider

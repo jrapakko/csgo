@@ -6,6 +6,7 @@
   desc: |
     Included in many FPS boost cfgs with a val of 0
   val: 0
+  input_type: slider
 
 - opt: r_dynamic
   enable: true
@@ -15,6 +16,7 @@
   desc: |
     0 to disable
   val: 0
+  input_type: toggle
 
 - opt: r_drawtracers_firstperson
   enable: true
@@ -24,6 +26,7 @@
   desc: |
     Enables/Disables first person tracers as gun fires (0 to disable)
   val: 0
+  input_type: toggle
 
 - opt: muzzleflash_light
   enable: true
@@ -33,6 +36,7 @@
   desc: |
     Enables/Disables the muzzleflashes as gun fires (0 to disable)
   val: 0
+  input_type: toggle
 
 - opt: safezonex
   enable: false
@@ -42,6 +46,7 @@
   desc: |
     Avoid having some of the game not on screen (See: <a href=http://en.wikipedia.org/wiki/Overscan>Wikipedia: Overscan</a>)
   val: 1
+  input_type: slider
 
 - opt: safezoney
   enable: false
@@ -51,6 +56,7 @@
   desc: |
     Avoid having some of the game not on screen (See: <a href=http://en.wikipedia.org/wiki/Overscan>Wikipedia: Overscan</a>)
   val: 1
+  input_type: slider
 
 - opt: cl_detail_avoid_force
   enable: true
@@ -60,6 +66,7 @@
   desc: |
     Relates to detail props & players (See: <a href=https://developer.valvesoftware.com/wiki/Detail_props>Valve Developer Wiki: Detail Props</a>)
   val: 0
+  input_type: slider
 
 - opt: cl_detail_avoid_radius
   enable: true
@@ -69,6 +76,7 @@
   desc: |
     Relates to detail props & players (See: <a href=https://developer.valvesoftware.com/wiki/Detail_props>Valve Developer Wiki: Detail Props</a>)
   val: 0
+  input_type: slider
 
 - opt: cl_detail_avoid_recover_speed
   enable: true
@@ -78,6 +86,7 @@
   desc: |
     Relates to detail props & players (See: <a href=https://developer.valvesoftware.com/wiki/Detail_props>Valve Developer Wiki: Detail Props</a>)
   val: 0
+  input_type: slider
 
 - opt: cl_detail_max_sway
   enable: true
@@ -87,6 +96,7 @@
   desc: |
     Relates to detail props & players &ndash; affects weapon sway and can stop it (See: <a href=https://developer.valvesoftware.com/wiki/Detail_props>Valve Developer Wiki: Detail Props</a>)
   val: 0
+  input_type: slider
 
 - opt: cl_forcepreload
   enable: true
@@ -96,6 +106,7 @@
   desc: |
     Toggles whether to preload map into memory (results in more consistent FPS at cost of a longer map loading time)
   val: 1
+  input_type: toggle
 
 - opt: fps_max
   enable: false
@@ -105,6 +116,7 @@
   desc: |
     Set maximum FPS for the engine to run at (recommend you set this to Monitor Frequency (in Hz) * 2 + 10, which 130 for most people). This could result in less heat generation and CPU/GPU load when the engine could be running at a higher fps.
   val: 130
+  input_type: slider
 
 - opt: fps_max_menu
   enable: false
@@ -115,6 +127,7 @@
     Set maximum FPS for engine to run at while in menus. Recommend this is set to 60 &ndash; there is no real benefit to setting this high and most studies seem to believe the human range of vision can handle around 30fps so there is no need to stress your system by having this much higher than that.
     60fps should be undiscernable from anything higher in menus.
   val: 60
+  input_type: slider
 
 - opt: engine_nofocus_sleep
   enable: false
@@ -124,6 +137,7 @@
   desc: |
     If the game window loses focus, the engine sleeps for this many milliseconds after every frame. This is ~ 15-20fps while the game is in the background
   val: 50
+  input_type: slider
 
 - opt: mat_queue_mode
   enable: false
@@ -138,6 +152,7 @@
     2=queued multithreaded
     Sets the multicore rendering mode (threads and synchronous behavior). &minus;1 should default to optimal settings for your system.
   val: -1
+  input_type: dropdown
 
 
 - opt: mat_monitor_gamma
@@ -148,6 +163,7 @@
   desc: |
     Adjusts gamma correction (See: <a href=http://en.wikipedia.org/wiki/Gamma_correction>Wikipedia: Gamma Correction</a>)
   val: 2.0
+  input_type: slider
 
 - opt: mat_vsync
   enable: true
@@ -157,6 +173,7 @@
   desc: |
     VSync protects against screen tearing by double-buffering frames, but results in lower FPS due to doubling up on frames and by limiting the engine to 60FPS and RESULTS IN INPUT LAG (bad for games like CS:GO where reactions are key). See: <a href="http://en.wikipedia.org/wiki/Screen_tearing">Wikipedia: Screen Tearing</a>
   val: 0
+  input_type: toggle
 
 - opt: mat_savechanges
   enable: true
@@ -166,3 +183,4 @@
   desc: |
     Enable this if you have made any changes to commands starting with "mat_" or they won't actually affect your game's settings
   val: "N/A"
+  input_type: none

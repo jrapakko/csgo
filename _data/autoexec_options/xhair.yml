@@ -6,6 +6,7 @@
   desc: |
     Enables/Disables the crosshair
   val: 1
+  input_type: toggle
 
 - opt: cl_crosshairstyle
   enable: true
@@ -21,6 +22,7 @@
     4 classic static (completely static)
     5 classic 1.6/CS:S style (only spreads while shooting)
   val: 4
+  input_type: dropdown
 
 - opt: cl_crosshairdot
   enable: true
@@ -30,6 +32,7 @@
   desc: |
     Toggles the dot at the center of the crosshair
   val: 0
+  input_type: toggle
 
 - opt: cl_crosshairsize
   enable: true
@@ -39,6 +42,7 @@
   desc: |
     Sets the size of the crosshair
   val: 3
+  input_type: slider
 
 - opt: cl_crosshairthickness
   enable: true
@@ -48,6 +52,7 @@
   desc: |
     Sets the thickenss of the crosshair
   val: 0.1
+  input_type: slider
 
 - opt: cl_crosshairgap
   enable: true
@@ -57,6 +62,7 @@
   desc: |
     Adjusts the size of the gap between the crosshair hatches
   val: 1
+  input_type: slider
 
 - opt: cl_fixedcrosshairgap
   enable: true
@@ -66,6 +72,7 @@
   desc: |
     How big to make the gap between the crosshair hatches
   val: 3
+  input_type: slider
 
 - opt: cl_crosshairgap_useweaponvalue
   enable: true
@@ -75,6 +82,7 @@
   desc: |
     Toggles whether to dynamically update the crosshair gap based on the weapon currently being used
   val: 0
+  input_type: toggle
 
 - opt: cl_crosshair_drawoutline
   enable: true
@@ -84,6 +92,7 @@
   desc: |
     Toggles whether to draw an outline around the crosshair
   val: 0
+  input_type: toggle
 
 - opt: cl_crosshair_outlinethickness
   enable: true
@@ -93,6 +102,7 @@
   desc: |
     Sets the thickness of the outline around the crosshair if the outline is enabled
   val: 0.1
+  input_type: slider
 
 - opt: cl_crosshaircolor
   enable: true
@@ -108,6 +118,7 @@
     4 Cyan
     5 Custom Color (using r,g,b)
   val: 5
+  input_type: color-dropdown
 
 - opt: cl_crosshaircolor_r
   enable: true
@@ -117,6 +128,7 @@
   desc: |
     How much red to use for the crosshair color
   val: 250
+  input_type: color-slider
 
 - opt: cl_crosshaircolor_g
   enable: true
@@ -126,6 +138,7 @@
   desc: |
     How much green to use for the crosshair color
   val: 150
+  input_type: color-slider
 
 - opt: cl_crosshaircolor_b
   enable: true
@@ -135,6 +148,7 @@
   desc: |
     How much blue to use for the crosshair color
   val: 200
+  input_type: color-slider
 
 - opt: cl_crosshairusealpha
   enable: true
@@ -144,6 +158,7 @@
   desc: |
     Toggles whether to use the alpha value for crosshair trasparency
   val: 1
+  input_type: toggle
 
 - opt: cl_crosshairalpha
   enable: true
@@ -153,6 +168,7 @@
   desc: |
     How transparent the crosshair should be
   val: 255
+  input_type: slider
 
 - opt: cl_crosshair_dynamic_maxdist_splitratio
   enable: true
@@ -163,6 +179,7 @@
     Must use cl_crosshairstyle 2
     Ratio to determine how long the inner and outer pips will be
   val: 1
+  input_type: slider
 
 - opt: cl_crosshair_dynamic_splitalpha_innermod
   enable: true
@@ -173,6 +190,7 @@
     Must use cl_crosshairstyle 2
     Alpha modification for inner crosshair pips once they've split
   val: 0
+  input_type: slider
 
 - opt: cl_crosshair_dynamic_splitalpha_outermod
   enable: true
@@ -183,6 +201,7 @@
     Must use cl_crosshairstyle 2
     Alpha modification for outer crosshair pips once they've split
   val: 1
+  input_type: slider
 
 - opt: cl_crosshair_dynamic_splitdist
   enable: true
@@ -193,4 +212,5 @@
     Must use cl_crosshairstyle 2
     The distance that the crosshair pips will split into 2
   val: 0
+  input_type: slider
 
