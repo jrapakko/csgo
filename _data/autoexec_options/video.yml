@@ -7,6 +7,7 @@
     Included in many FPS boost cfgs with a val of 0
   val: 0
   input_type: slider
+  max_val: 90
 
 - opt: r_dynamic
   enable: true
@@ -47,6 +48,7 @@
     Avoid having some of the game not on screen (See: <a href=http://en.wikipedia.org/wiki/Overscan>Wikipedia: Overscan</a>)
   val: 1
   input_type: slider
+  slider_step: 0.01
 
 - opt: safezoney
   enable: false
@@ -57,6 +59,7 @@
     Avoid having some of the game not on screen (See: <a href=http://en.wikipedia.org/wiki/Overscan>Wikipedia: Overscan</a>)
   val: 1
   input_type: slider
+  slider_step: 0.001
 
 - opt: cl_detail_avoid_force
   enable: true
@@ -67,6 +70,7 @@
     Relates to detail props & players (See: <a href=https://developer.valvesoftware.com/wiki/Detail_props>Valve Developer Wiki: Detail Props</a>)
   val: 0
   input_type: slider
+  slider_step: 0.01
 
 - opt: cl_detail_avoid_radius
   enable: true
@@ -77,6 +81,8 @@
     Relates to detail props & players (See: <a href=https://developer.valvesoftware.com/wiki/Detail_props>Valve Developer Wiki: Detail Props</a>)
   val: 0
   input_type: slider
+  max_val: 2048
+  slider_step: 2
 
 - opt: cl_detail_avoid_recover_speed
   enable: true
@@ -87,6 +93,8 @@
     Relates to detail props & players (See: <a href=https://developer.valvesoftware.com/wiki/Detail_props>Valve Developer Wiki: Detail Props</a>)
   val: 0
   input_type: slider
+  max_val: 1024
+  slider_step: 1
 
 - opt: cl_detail_max_sway
   enable: true
@@ -97,6 +105,8 @@
     Relates to detail props & players &ndash; affects weapon sway and can stop it (See: <a href=https://developer.valvesoftware.com/wiki/Detail_props>Valve Developer Wiki: Detail Props</a>)
   val: 0
   input_type: slider
+  max_val: 200
+  slider_step: 5
 
 - opt: cl_forcepreload
   enable: true
@@ -117,6 +127,8 @@
     Set maximum FPS for the engine to run at (recommend you set this to Monitor Frequency (in Hz) * 2 + 10, which 130 for most people). This could result in less heat generation and CPU/GPU load when the engine could be running at a higher fps.
   val: 130
   input_type: slider
+  max_val: 999
+  slider_step: 1
 
 - opt: fps_max_menu
   enable: false
@@ -128,6 +140,8 @@
     60fps should be undiscernable from anything higher in menus.
   val: 60
   input_type: slider
+  max_val: 999
+  slider_step: 1
 
 - opt: engine_nofocus_sleep
   enable: false
@@ -138,6 +152,8 @@
     If the game window loses focus, the engine sleeps for this many milliseconds after every frame. This is ~ 15-20fps while the game is in the background
   val: 50
   input_type: slider
+  max_val: 10000
+  slider_step: 5
 
 - opt: mat_queue_mode
   enable: false
@@ -164,6 +180,7 @@
     Adjusts gamma correction (See: <a href=http://en.wikipedia.org/wiki/Gamma_correction>Wikipedia: Gamma Correction</a>)
   val: 2.0
   input_type: slider
+  slider_step: 0.01
 
 - opt: mat_vsync
   enable: true

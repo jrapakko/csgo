@@ -7,6 +7,8 @@
     mouse sensitivity as a multiplier to base dpi (1.0 is 1:1)
   val: 2.0531250
   input_type: slider
+  slider_step: 0.0001
+  slider_scale: logarithmic
 
 - opt: zoom_sensitivity_ratio_mouse
   enable: true
@@ -17,6 +19,8 @@
     acts as a multiplier to the base sensitivity when scoped (1.0 is 1:1)
   val: 1.0
   input_type: slider
+  slider_step: 0.0001
+  slider_scale: logarithmic
 
 - opt: m_rawinput
   enable: true
@@ -62,6 +66,8 @@
     Formula: mousesensitivity = ( rawmousedelta^m_customaccel_exponent ) * m_customaccel_scale + sensitivity
   val: 1
   input_type: slider
+  slider_step: 0.00001
+  max_val: 2.5
 
 - opt: m_customaccel_scale 
   enable: true
@@ -72,6 +78,8 @@
     Formula: mousesensitivity = ( rawmousedelta^m_customaccel_exponent ) * m_customaccel_scale + sensitivity
   val: 0
   input_type: slider
+  slider_step: 0.00001
+  max_val: 2.5
 
 - opt: m_customaccel_max
   enable: true
@@ -82,6 +90,8 @@
     0 for no limit
   val: 0
   input_type: slider
+  slider_step: 0.00001
+  max_val: 2.5
 
 - opt: m_mouseaccel1
   enable: true
@@ -90,6 +100,8 @@
   name: "Windows Mouse Acceleration Initial Threshold (2x movement)"
   val: 0
   input_type: slider
+  slider_step: 0.00001
+  max_val: 2.5
 
 - opt: m_mouseaccel2
   enable: true
@@ -98,4 +110,6 @@
   name: "Windows Mouse Acceleration Secondary Threshold (4x movement)."
   val: 0
   input_type: slider
+  slider_step: 0.00001
+  max_val: 2.5
 

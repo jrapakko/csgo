@@ -22,6 +22,8 @@
     Recommended you set this as low as possible without any adverse effects
   val: 0.05
   input_type: slider
+  slider_step: 0.01
+  max_val: 1
 
 - opt: snd_headphone_pan_exponent
   enable: true
@@ -32,6 +34,8 @@
     Weights the direction of sounds
   val: 2.0
   input_type: slider
+  slider_step: 0.1
+  max_val: 20
 
 - opt: snd_headphone_pan_radial_weight
   enable: true
@@ -72,6 +76,7 @@
     Sets the game's master volume
   val: 1
   input_type: slider
+  slider_step: 0.001
 
 - opt: snd_musicvolume
   enable: true
@@ -82,6 +87,7 @@
     Sets the volume of game music
   val: 0
   input_type: slider
+  slider_step: 0.001
 
 - opt: voice_enable
   enable: true
@@ -102,6 +108,7 @@
     Sets the volume of voice communications
   val: 0.8
   input_type: slider
+  slider_step: 0.001
 
 - opt: lobby_voice_chat_enabled
   enable: true

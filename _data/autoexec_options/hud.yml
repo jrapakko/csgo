@@ -48,6 +48,7 @@
     Sets the transparency of the HUD
   val: 0.5
   input_type: slider
+  slider_step: 0.000001
 
 - opt: cl_hud_playercount_showcount
   enable: true
@@ -57,7 +58,7 @@
   desc: |
     Toggles whether to show player icons or count of players alive
   val: 1
-  input--type: toggle
+  input_type: toggle
 
 - opt: cl_hud_playercount_pos
   enable: true
@@ -98,6 +99,7 @@
     The size of the HUD as a percentage of maximum (1)
   val: 1.0
   input_type: slider
+  slider_step: 0.000001
 
 - opt: cl_teammate_colors_show
   enable: true
@@ -153,6 +155,7 @@
     Sets the minimum icon scale on the radar (aka the size of teammates on the radar)
   val: 0.6
   input_type: slider
+  slider_step: 0.000001
 
 - opt: cl_hud_radar_scale
   enable: true
@@ -163,16 +166,18 @@
     Scaling of the radar within the HUD
   val: 1.25
   input_type: slider
+  slider_step: 0.000001
 
 - opt: cl_radar_scale
   enable: true
-  allowed_vals: ["0.250000","1.000000"]
+  min_max_vals: ["0.250000","1.000000"]
   default_val: 1
   name: Size/Scale of the map within the radar
   desc: |
     Scaling of the map size within the radar (smaller shows more of the map, larger closer detail)
   val: 0.25
   input_type: slider
+  slider_step: 0.000001
 
 - opt: cl_radar_square_with_scoreboard
   enable: true

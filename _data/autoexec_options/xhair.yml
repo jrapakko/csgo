@@ -43,6 +43,8 @@
     Sets the size of the crosshair
   val: 3
   input_type: slider
+  slider_step: 1
+  max_val: 80
 
 - opt: cl_crosshairthickness
   enable: true
@@ -53,6 +55,7 @@
     Sets the thickenss of the crosshair
   val: 0.1
   input_type: slider
+  slider_step: 0.1
 
 - opt: cl_crosshairgap
   enable: true
@@ -63,6 +66,9 @@
     Adjusts the size of the gap between the crosshair hatches
   val: 1
   input_type: slider
+  slider_step: 1
+  min_val: -25
+  max_val: 25
 
 - opt: cl_fixedcrosshairgap
   enable: true
@@ -73,6 +79,9 @@
     How big to make the gap between the crosshair hatches
   val: 3
   input_type: slider
+  slider_step: 1
+  min_val: -25
+  max_val: 25
 
 - opt: cl_crosshairgap_useweaponvalue
   enable: true
@@ -103,6 +112,7 @@
     Sets the thickness of the outline around the crosshair if the outline is enabled
   val: 0.1
   input_type: slider
+  slider_step: 0.1
 
 - opt: cl_crosshaircolor
   enable: true
@@ -180,6 +190,7 @@
     Ratio to determine how long the inner and outer pips will be
   val: 1
   input_type: slider
+  slider_step: 0.000001
 
 - opt: cl_crosshair_dynamic_splitalpha_innermod
   enable: true
@@ -191,6 +202,7 @@
     Alpha modification for inner crosshair pips once they've split
   val: 0
   input_type: slider
+  slider_step: 0.000001
 
 - opt: cl_crosshair_dynamic_splitalpha_outermod
   enable: true
@@ -202,6 +214,7 @@
     Alpha modification for outer crosshair pips once they've split
   val: 1
   input_type: slider
+  slider_step: 0.000001
 
 - opt: cl_crosshair_dynamic_splitdist
   enable: true
@@ -213,4 +226,5 @@
     The distance that the crosshair pips will split into 2
   val: 0
   input_type: slider
+  max_val: 25
 

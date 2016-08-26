@@ -38,6 +38,7 @@
     value refers to what pixel the top of the graph is drawn downward from
   val: 32
   input_type: slider
+  max_val: 1440
 
 - opt: net_graphproportionalfont
   enable: false

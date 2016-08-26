@@ -6,11 +6,15 @@
 
 {% elsif input_type == "slider" %}
     
-    <input class="bootstrapSlider" type="text" data-slider-min="{{ opt.min_max_vals[0] }}" data-slider-max="{{ opt.min_max_vals[1] }}" data-slider-value="{{ val }}">
+    <input class="bootstrapSlider" type="text" {% if opt.min_val %} data-slider-min="{{ opt.min_val }}" {% else %} data-slider-min="{{ opt.min_max_vals[0] }}" {% endif %} {% if opt.max_val %} data-slider-max="{{ opt.max_val }}" {% else %} data-slider-max="{{ opt.min_max_vals[1] }}"{% endif %} data-slider-value="{{ val }}"{% if opt.slider_step %} data-slider-step="{{ opt.slider_step }}" {% endif %}{% if opt.slider_scale %} data-slider-scale="{{ opt.slider_scale }}" {% endif %}>
     <input class="sliderValue" type="text" placeholder="{{ val }}" style="width: 210px;">
 
-{% else %}
+{% elsif input_type == "text" %}
 
     <input type="text" placeholder="{{ val }}" style="width: 72px;"{% if opt.enable == false %} disabled{% endif %}>
 
+{% else %}
+
+    <span style="width: 72px;">{{ val }}</span>
+    
 {% endif %}

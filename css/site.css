@@ -1,4 +1,4 @@
-tr.slider {
+tr.slider, tr.toggle, tr.text, tr.dropdown, tr.color-dropdown, tr.color-slider {
     display: table-row;
 }
 
