@@ -124,12 +124,20 @@
     Sets the crosshair color
     0 Red
     1 Green
-    2 yellow
+    2 Yellow
     3 Blue
     4 Cyan
     5 Custom Color (using r,g,b)
-  val: 5
+  default_color: Lime
   input_type: color-dropdown
+  values: {
+    0: [Red, Red],
+    1: [Green, Lime],
+    2: [Yellow, Yellow],
+    3: [Blue, Blue],
+    4: [Cyan, Cyan],
+    5: [Custom, "rgb(250,150,100)"]
+  }
 
 - opt: cl_crosshaircolor_r
   enable: true
@@ -140,6 +148,7 @@
     How much red to use for the crosshair color
   val: 250
   input_type: color-slider
+  id: slider_r
 
 - opt: cl_crosshaircolor_g
   enable: true
@@ -150,6 +159,7 @@
     How much green to use for the crosshair color
   val: 150
   input_type: color-slider
+  id: slider_g
 
 - opt: cl_crosshaircolor_b
   enable: true
@@ -160,6 +170,7 @@
     How much blue to use for the crosshair color
   val: 200
   input_type: color-slider
+  id: slider_b
 
 - opt: cl_crosshairusealpha
   enable: true
@@ -187,7 +198,7 @@
   default_val: 0.35
   name: Ratio for Inner and Outer Pips
   desc: |
-    Must use cl_crosshairstyle 2
+    Must use "Classic" crosshair style
     Ratio to determine how long the inner and outer pips will be
   val: 1
   input_type: slider
@@ -199,7 +210,7 @@
   default_val: 1
   name: Inner Split Alpha Modification
   desc: |
-    Must use cl_crosshairstyle 2
+    Must use "Classic" crosshair style
     Alpha modification for inner crosshair pips once they've split
   val: 0
   input_type: slider
@@ -211,7 +222,7 @@
   default_val: 0.5
   name: Outer Split Alpha Modification
   desc: |
-    Must use cl_crosshairstyle 2
+    Must use "Classic" crosshair style
     Alpha modification for outer crosshair pips once they've split
   val: 1
   input_type: slider
@@ -223,7 +234,7 @@
   default_val: 7
   name: Pip Split Distance
   desc: |
-    Must use cl_crosshairstyle 2
+    Must use "Classic" crosshair style
     The distance that the crosshair pips will split into 2
   val: 0
   input_type: slider

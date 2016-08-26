@@ -15,6 +15,9 @@ jQuery(document).ready(function($) {
     $('input.sliderValue').keyup($(this), valSlideChange);
 
     $('.dropdown-cvar > ul > li > a').on('click', changeDropDownVal);
+    $('.dropdown-color-cvar > ul > li > a').on('click', changeDropDownColor);
+
+    $('.color-slider').on('slide slideStop', changeCustomXhair);
 });
 
 function toggleCfgCommand(obj, event) {
@@ -85,4 +88,29 @@ function changeDropDownVal(event) {
     p.find('button').html($(this).text() + ' <span class="caret"></span>');
     p.find('button').val($(this).attr('href'));
     return false;
+}
+
+function changeDropDownColor(event) {
+    event.stopPropagation();
+    event.preventDefault();
+    var p = $(this).parents('div.dropdown-color-cvar');
+    p.find('button').css('background-color', $(this).closest('li').css('background-color'));
+    return false;
+}
+
+function getXhairCustomColor() {
+    var r = $('#slider_r').closest('td').find('input').val();
+    var g = $('#slider_g').closest('td').find('input').val();
+    var b = $('#slider_b').closest('td').find('input').val();
+    return "rgb(" + r + ", " + g + ", " + b + ")";
+}
+
+function changeCustomXhair(event) {
+    var cust = $('#cl_crosshaircolor > td > .dropdown-color-cvar > ul > li').last();
+    var color = getXhairCustomColor();
+    cust.css('background-color', color);
+    var selected = $('#cl_crosshaircolor > td > .dropdown-color-cvar > button');
+    if (selected.val() == 5) {
+        selected.css('background-color', color);
+    }
 }

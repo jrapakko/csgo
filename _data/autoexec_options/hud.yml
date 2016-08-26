@@ -24,20 +24,21 @@
   default_val: 0
   name: HUD Color
   desc: |
-    Sets color of the HUD:
-    0 Default
-    1 Aqua
-    2 Green
-    3 Yellow
-    4 Orange
-    5 Red
-    6 Pink
-    7 Purple
-    8 Blue
-    9 Light Blue
-    10 White
-  val: 6
+    Sets color of the HUD
+  default_color: LightYellow
   input_type: color-dropdown
+  values: {
+    0: [Default, LightYellow],
+    1: [Aqua, Aquamarine],
+    2: [Green, LawnGreen],
+    3: [Yellow, Yellow],
+    4: [Orange, Orange],
+    5: [Red, Red],
+    6: [Pink, Pink],
+    7: [Purple, MediumPurple],
+    8: [Light Blue, Aqua],
+    10: [White, White]
+  }
 
 - opt: cl_hud_background_alpha
   enable: true
@@ -121,14 +122,16 @@
   default_val: 0
   name: Player Color
   desc: |
-    Set the color that your teammates should see by default while in game (on minimap, etc.) -- your color:
-    0 Yellow
-    1 Purple
-    2 Green
-    3 Blue
-    4 Orange
-  val: 3
+    Set the color that your teammates should see by default while in game (on minimap, etc.) &mdash; your color
+  default_color: Yellow
   input_type: color-dropdown
+  values: {
+    0: [Yellow, Yellow],
+    1: [Purple, Purple],
+    2: [Green, Green],
+    3: [Blue, Blue],
+    4: [Orange, Orange]
+  }
 
 - opt: cl_radar_always_centered
   enable: true

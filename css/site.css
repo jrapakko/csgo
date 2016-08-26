@@ -10,3 +10,32 @@ tr.slider, tr.toggle, tr.text, tr.dropdown, tr.color-dropdown, tr.color-slider {
 .dropdown-cvar {
     width: 210px;
 }
+
+.dropdown-cvar .btn-default {
+    background-image: none;
+    filter: none;
+}
+
+#slider_r .slider-selection {
+    background: #FF8282;
+}
+
+#slider_r .slider-handle {
+    background: red;
+}
+
+#slider_g .slider-selection {
+    background: #428041;
+}
+
+#slider_g .slider-handle {
+    background: green;
+}
+
+#slider_b .slider-selection {
+    background: #8283FF;
+}
+
+#slider_b .slider-handle {
+    background: blue;
+}
