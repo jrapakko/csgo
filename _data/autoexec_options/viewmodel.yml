@@ -5,12 +5,14 @@
   name: "Viewmodel Position"
   desc: |
     Sets the position of the viewmodel
-    0 Enable using viewmodel_offset_x, viewmodel_offset_y, & viewmodel_offset_z
-    1 Desktop position
-    2 Couch position
-    3 Classic position
-  val: 0
+    Custom Offsets use viewmodel_offset_x, viewmodel_offset_y, & viewmodel_offset_z
   input_type: dropdown
+  values: {
+    0: Set Custom Offsets,
+    1: Desktop,
+    2: Couch,
+    3: Classic
+  }
 
 - opt: viewmodel_fov
   enable: true

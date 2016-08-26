@@ -14,15 +14,16 @@
   default_val: 2
   name: Crosshair Style
   desc: |
-    The style of the crosshair
-    0 default (spreads while moving and shooting)
-    1 default static (completely static, default style)
-    2 classic (spreadys while moving and shooting, with additional markings for spread)
-    3 classic dynamic (spreads while moving and shooting)
-    4 classic static (completely static)
-    5 classic 1.6/CS:S style (only spreads while shooting)
-  val: 4
+    The style of the crosshair (See <a href="http://clutchround.com/csgo-crosshair-settings/">Clutchround Crosshair Settings Explained</a> for more information)
   input_type: dropdown
+  values: {
+    0: Default,
+    1: Default Static,
+    2: Classic,
+    3: Classic Dynamic,
+    4: Classic Static,
+    5: "Classic 1.6/CS:S style"
+  }
 
 - opt: cl_crosshairdot
   enable: true

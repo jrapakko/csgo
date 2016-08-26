@@ -3,14 +3,13 @@
   allowed_vals: [-1,1,3,4,6]
   default_val: -1
   name: Speaker Configuration
-  desc: |
-    &minus;1 &ndash; Auto-detect
-    &nbsp;&nbsp;1 &ndash; Headphones
-    &nbsp;&nbsp;3 &ndash; 4 Speakers
-    &nbsp;&nbsp;4 &ndash; 2 Speakers (Stereo)
-    &nbsp;&nbsp;6 &ndash; 5.1 Surround Sound
-  val: 1
   input_type: dropdown
+  values: {
+    -1: Auto-detect,
+    1: Headphones,
+    3: 4 Speakers,
+    6: 5.1 Surround Sound
+  }
 
 - opt: snd_mixahead
   enable: true
@@ -46,6 +45,11 @@
     Changes the computation method for direction of sounds
   val: 2
   input_type: dropdown
+  values: {
+    0: 0,
+    1: 1,
+    2: 2
+  }
 
 - opt: snd_legacy_surround
   enable: true

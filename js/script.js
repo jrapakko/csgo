@@ -13,6 +13,8 @@ jQuery(document).ready(function($) {
     $('.bootstrapSlider').on('slideStop', $(this).parents('td'), slideValChange);
 
     $('input.sliderValue').keyup($(this), valSlideChange);
+
+    $('.dropdown-cvar > ul > li > a').on('click', changeDropDownVal);
 });
 
 function toggleCfgCommand(obj, event) {
@@ -74,4 +76,13 @@ function slideValChange(event) {
 function valSlideChange(event) {
     var p = $(this).parents('td');
     p.find('input.bootstrapSlider').slider('setValue',Number($(this).val()));
+}
+
+function changeDropDownVal(event) {
+    event.stopPropagation();
+    event.preventDefault();
+    var p = $(this).parents('div.dropdown-cvar');
+    p.find('button').html($(this).text() + ' <span class="caret"></span>');
+    p.find('button').val($(this).attr('href'));
+    return false;
 }

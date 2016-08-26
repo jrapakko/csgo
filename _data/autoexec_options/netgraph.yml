@@ -27,6 +27,11 @@
     3 - far left
   val: 0
   input_type: dropdown
+  values: {
+    1: far right,
+    2: middle,
+    3: far left
+  }
 
 - opt: net_graphheight
   enable: false

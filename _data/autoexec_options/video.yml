@@ -161,14 +161,15 @@
   default_val: -1
   name: Multicore Rendering
   desc: |
-    &minus;2=legacy default
-    &minus;1=default
-    0=synchronous single thread
-    1=queued single thread
-    2=queued multithreaded
     Sets the multicore rendering mode (threads and synchronous behavior). &minus;1 should default to optimal settings for your system.
-  val: -1
   input_type: dropdown
+  values: {
+    -2: legacy default,
+    -1: default (optimal),
+    0: synchronous single thread,
+    1: queued single thread,
+    2: queued multithreaded,
+  }
 
 
 - opt: mat_monitor_gamma

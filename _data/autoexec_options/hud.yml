@@ -108,8 +108,12 @@
   name: Teammate Colors
   desc: |
     Toggles whether to show teammate colors on radar as well as in games, also can give letter of color name on radar
-  val: 2
   input_type: dropdown
+  values: {
+    0: No Teammate Colors,
+    1: Teammate Colors,
+    2: Teammate Colors & Letters
+  }
 
 - opt: cl_color
   enable: true

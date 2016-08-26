@@ -75,8 +75,12 @@
   desc: |
     Allows you to filter custom file downloads from servers (community servers)
     Setting this to all can make custom gamemodes and break and not allow you to download maps from servers so recommend this is set to none or nosounds
-  val: "nosounds"
   input_type: dropdown
+  values: {
+    all: all,
+    nosounds: nosounds,
+    none: none
+  }
 
 - opt: cl_disablehtmlmotd
   enable: true
@@ -134,8 +138,12 @@
     0 &ndash; default (random? &mdash unverified)
     4 &ndash; firstperson (automatically spectate in firstperson on death or in spectator slots)
     5 &ndash; thirdperson (same as above but in thirdperson, will still default to firstperson if server blocks thirdperson specators)
-  val: 4
   input_type: dropdown
+  values: {
+    0: Default,
+    4: Firstperson,
+    5: Thirdperson
+  }
 
 - opt: spec_usenumberkeys_nobinds
   enable: true
@@ -237,13 +245,18 @@
 - opt: ui_steam_overlay_notification_position
   enable: true
   allowed_vals: ["bottomright","topright","bottomleft","topleft"]
-  default_val: "bottomright"
   name: Steam Overlay Notification Position
   desc: |
     Sets the position where steam overlay messages show up.
     Recommend not in top left (blocks radar) and prefer to keep it in the top right so it doesn't cover hp/armor or loadout/ammunition portions of the hud
   val: "topright"
   input_type: dropdown
+  values: {
+    bottomright: bottomright,
+    topright: topright,
+    bottomleft: bottomleft,
+    topleft: topleft
+  }
 
 - opt: cl_showpluginmessages
   enable: false

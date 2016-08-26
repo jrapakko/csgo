@@ -41,8 +41,12 @@
     Enables or disables Windows mouse acceleration in-game
     1 to Enable (Windows 2000: initial threshold enable)
     2 to Enable Windows 2000 secondary threshold (Note: this only works on Windows 2000)
-  val: 0
   input_type: dropdown
+  values: {
+    0: Disable Windows mouse accel,
+    1: Enable initial threshold,
+    2: Enable secondary threshold
+  }
 
 - opt: m_customaccel
   enable: true
@@ -53,8 +57,13 @@
     0 disable, 1 to enable, 2 enable with separate yaw/pitch rescale, 3 enable without m_customaccel_scale (unverified)
     Formula: mousesensitivity = ( rawmousedelta^m_customaccel_exponent ) * m_customaccel_scale + sensitivity
     If mode is 2, then x and y sensitivity are scaled by m_pitch and m_yaw respectively.
-  val: 0
   input_type: dropdown
+  values: {
+    0: Disabled,
+    1: Enabled,
+    2: Enabled with yaw/pitch,
+    3: Enable without m_customaccel_scale
+  }
 
 - opt: m_customaccel_exponent
   enable: true

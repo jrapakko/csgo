@@ -12,11 +12,15 @@
   enable: false
   allowed_vals: [0,1,2]
   default_val: 0
-  name: "Enable con_filter_text"
+  name: "Console Filtered Text"
   desc: |
     1 filters completely, 2 displayrs filtered text brighter than other text
-  val: 0
   input_type: dropdown
+  values: {
+    0: No filter,
+    1: Fully filtered,
+    2: Highlighted filter
+  }
 
 - opt: con_filter_text
   enable: false

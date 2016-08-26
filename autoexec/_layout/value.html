@@ -9,12 +9,26 @@
     <input class="bootstrapSlider" type="text" {% if opt.min_val %} data-slider-min="{{ opt.min_val }}" {% else %} data-slider-min="{{ opt.min_max_vals[0] }}" {% endif %} {% if opt.max_val %} data-slider-max="{{ opt.max_val }}" {% else %} data-slider-max="{{ opt.min_max_vals[1] }}"{% endif %} data-slider-value="{{ val }}"{% if opt.slider_step %} data-slider-step="{{ opt.slider_step }}" {% endif %}{% if opt.slider_scale %} data-slider-scale="{{ opt.slider_scale }}" {% endif %}>
     <input class="sliderValue" type="text" placeholder="{{ val }}" style="width: 210px;">
 
+{% elsif input_type == "dropdown" %}
+
+    <div class="dropdown dropdown-cvar">
+        <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" style="word-wrap: break; white-space: normal;" value="">
+        {{ opt.name }}
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            {% for value in opt.values %}
+                <li><a href="{{ value[0] }}">{{ value[1] }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
 {% elsif input_type == "text" %}
 
     <input type="text" placeholder="{{ val }}" style="width: 72px;"{% if opt.enable == false %} disabled{% endif %}>
 
 {% else %}
 
-    <span style="width: 72px;">{{ val }}</span>
-    
+    <span style="width: 210px;">{{ val }}</span>
+
 {% endif %}
