@@ -4,6 +4,11 @@
         <input type="checkbox" checked data-toggle="toggle" data-on="{{ opt.allowed_vals[1] }}" data-off="{{ opt.allowed_vals[0] }}" data-onstyle="info" data-offstyle="danger">
     </label>
 
+{% elsif input_type == "slider" %}
+    
+    <input class="bootstrapSlider" type="text" data-slider-min="{{ opt.min_max_vals[0] }}" data-slider-max="{{ opt.min_max_vals[1] }}" data-slider-value="{{ val }}">
+    <input class="sliderValue" type="text" placeholder="{{ val }}" style="width: 210px;">
+
 {% else %}
 
     <input type="text" placeholder="{{ val }}" style="width: 72px;"{% if opt.enable == false %} disabled{% endif %}>

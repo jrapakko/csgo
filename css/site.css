@@ -1,0 +1,8 @@
+tr.slider {
+    display: table-row;
+}
+
+.slider .sliderValue {
+    display: block;
+    margin-top: 10px;
+}

@@ -8,6 +8,11 @@ jQuery(document).ready(function($) {
             return toggleCfgCommand($(this).children('span'), event)
         }
     });
+
+    $('.bootstrapSlider').slider();
+    $('.bootstrapSlider').on('slideStop', $(this).parents('td'), slideValChange);
+
+    $('input.sliderValue').keyup($(this), valSlideChange);
 });
 
 function toggleCfgCommand(obj, event) {
@@ -19,11 +24,54 @@ function toggleCfgCommand(obj, event) {
     p.find('td > code').toggleClass('text-muted');
     p.find('td > pre').toggleClass('text-muted');
     p.find('td > pre > code').toggleClass('text-muted keep-color');
-    var textin = p.find('td > :text');
+    var textin = '';
+    if (p.hasClass('text')) {
+        return toggleText(p);
+    } else if (p.hasClass('toggle')) {
+        return toggleToggle(p);
+    } else if (p.hasClass('slider')) {
+        return toggleSlider(p);
+    }
+    return false;
+}
+
+
+function toggleText(obj) {
+    textin = obj.find('td > :text');
     if (textin.is(':disabled')) {
         textin.prop({disabled: false});
     } else {
         textin.prop({disabled: true});
     }
     return false;
+}
+
+function toggleToggle(obj) {
+    textin = obj.find('td > label > div > :checkbox');
+    if (textin.is(':disabled')) {
+        textin.bootstrapToggle('enable');
+    } else {
+        textin.bootstrapToggle('disable');
+    }
+    return false;
+}
+
+function toggleSlider(obj) {
+    textin = obj.find('td > input');
+    if (textin.is(':disabled')) {
+        textin.prop({disabled: false});
+    } else {
+        textin.prop({disabled: true});
+    }
+    return false;
+}
+
+function slideValChange(event) {
+    var p = $(this).parents('td');
+    p.find('.sliderValue').val(event.value);
+}
+
+function valSlideChange(event) {
+    var p = $(this).parents('td');
+    p.find('input.bootstrapSlider').slider('setValue',Number($(this).val()));
 }

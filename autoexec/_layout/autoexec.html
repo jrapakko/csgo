@@ -17,7 +17,7 @@
         </thead>
         <tbody>
         {% for opt in opts[0] %}
-            <tr{% if opt.enable == false %} class="danger"{% endif %}>
+            <tr{% if opt.enable == false %} class="danger"{% endif %} class="{{ opt.input_type }}">
                 <td>
                     <a class="opt-enable" href="#{{ opt.opt }}">
                         <span id="{{ opt.opt }}" class="{% if opt.enable %}glyphicon enabled glyphicon-ok glyphicon-green{% else %}glyphicon disabled glyphicon-remove glyphicon-red{% endif %}"></span>
