@@ -38,3 +38,7 @@ function printSection(obj) {
     }
     return str;
 }
+
+function processInput(event) {
+    var vars = $.('#rate, #netgraph, #video, #audio, #mouse, #game, #viewmodel, #hud, #xhair, table#keybinds, #misc');
+}
