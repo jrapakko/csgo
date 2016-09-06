@@ -1,13 +1,3 @@
-$(document).ready(function() {
-    $.get('/csgo/autoexec/autoexec_template.html', function(data) {
-        // console.log(data);
-        console.log($.parseJSON(data));
-        console.log(printAutoExec($.parseJSON(data)));
-    });
-
-    // data:text/plain;charset=utf-8,printAutoExec()
-});
-
 $('.save-opts').on('click', processSave);
 
 function printAutoExec(obj) {
@@ -49,7 +39,7 @@ function processSave(event) {
     var jsonObj = ";"
     $.get('/csgo/autoexec/autoexec_template.html', function(data) {
         jsonObj = $.parseJSON(data);
-        console.log(jsonObj);
+        // console.log(jsonObj);
         // console.log($.parseJSON(data));
         // console.log(printAutoExec($.parseJSON(data)));
         var vars = $('table#rate, table#netgraph, table#video, table#audio, table#mouse, table#game, table#viewmodel, table#hud, table#xhair, table#keybinds, table#misc');
@@ -77,7 +67,7 @@ function parseValues(jsonObj, section) {
     colorSliderVars.each(function() { parseColorSlider(jsonObj, this, name); });
 
     // dropdown & color dropdown parsing
-    var dropdownVars = $('tr.dropdown tr.color-dropdown', section);
+    var dropdownVars = $('tr.dropdown, tr.color-dropdown', section);
     dropdownVars.each(function() { parseDropdown(jsonObj, this, name); });
 
     // toggle parsing
