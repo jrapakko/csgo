@@ -23,6 +23,9 @@
                             <h2 class="panel-title">{{ panel_title }}</h2>
                         </div>
                         <div class="panel-body">
+                            {% if panel_title == "Autoexec Configuration &amp; Generation" %}
+                                <h4>Note: You must click Save Opts after changing any cvar value for the new value to be included in the downloaded file.</h4>
+                            {% endif %}
                             {{ content }}
                         </div>
                     </div>
