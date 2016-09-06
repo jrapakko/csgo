@@ -43,3 +43,7 @@ tr.slider, tr.toggle, tr.text, tr.dropdown, tr.color-dropdown, tr.color-slider {
 #slider_b .slider-handle {
     background: blue;
 }
+
+.dl-file > a {
+    color: #FFF;
+}

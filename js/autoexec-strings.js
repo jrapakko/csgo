@@ -43,11 +43,30 @@ function printSection(obj) {
 
 function processSave(event) {
 
-    var vars = $('#rate, #netgraph, #video, #audio, #mouse, #game, #viewmodel, #hud, #xhair, table#keybinds, #misc');
+    // Processes enabled options and writes them into JSON object, then calls print and sets the download text of
+    // the <button class="dl-file"> to be the pretty printed text
 
+    var jsonObj = ";"
+    $.get('/csgo/autoexec/autoexec_template.html', function(data) {
+        jsonObj = $.parseJSON(data);
+        console.log(jsonObj);
+        // console.log($.parseJSON(data));
+        // console.log(printAutoExec($.parseJSON(data)));
+        var vars = $('#rate, #netgraph, #video, #audio, #mouse, #game, #viewmodel, #hud, #xhair, table#keybinds, #misc');
+        console.log(vars);
+        vars.each(function() { parseValues(jsonObj, this) });
 
-    // Enable download button once processing is completed
-    if ($('.dl-file').hasClass('disabled')) {
-        $('.dl-file').toggleClass('disabled');
-    }
+        var downloadText = printAutoExec(jsonObj);
+
+        $('.dl-file').prop("href", "data:text/plain;charset=utf-8," + encodeURIComponent(downloadText));
+
+        if ($('.dl-file').hasClass('disabled')) {
+            $('.dl-file').toggleClass('disabled');
+        }
+    });
+}
+
+function parseValues(jsonObj, section) {
+    var name = $(section).attr('id');
+    var cvars = $('tr.slider', section);
 }
