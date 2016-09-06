@@ -68,5 +68,29 @@ function processSave(event) {
 
 function parseValues(jsonObj, section) {
     var name = $(section).attr('id');
-    var cvars = $('tr.slider', section);
+    var sliderVars = $('tr.slider', section);
+
+    sliderVars.each(function() { parseSlider(jsonObj, this, name) });
+
+    // jsonObj[name].opts[];
+}
+
+function parseSlider(jsonObj, slider, name) {
+
+    var cvar = $(slider).attr('id');
+    console.log(cvar);
+    // check to see if user has disabled the option
+
+    var enable = !$(slider).find('a.opt-enable > span').hasClass('disabled');
+
+    // get the value
+    var value = $(slider).find('td > input.sliderValue').val();
+
+    // if not user disabled and value is not a placeholder, enable and set the value
+    if (enable && value != "") {
+        jsonObj[name].opts[cvar].enable = true;
+        jsonObj[name].opts[cvar].value = value;
+    } else {    // make sure it gets disabled if user disabled it after inputting a value
+        jsonObj[name].opts[cvar].enable = false;
+    }
 }
