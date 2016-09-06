@@ -8,6 +8,8 @@ $(document).ready(function() {
     // data:text/plain;charset=utf-8,printAutoExec()
 });
 
+$('.save-opts').on('click', processSave);
+
 function printAutoExec(obj) {
     console.log(obj);
     str = '';
@@ -39,6 +41,13 @@ function printSection(obj) {
     return str;
 }
 
-function processInput(event) {
-    var vars = $.('#rate, #netgraph, #video, #audio, #mouse, #game, #viewmodel, #hud, #xhair, table#keybinds, #misc');
+function processSave(event) {
+
+    var vars = $('#rate, #netgraph, #video, #audio, #mouse, #game, #viewmodel, #hud, #xhair, table#keybinds, #misc');
+
+
+    // Enable download button once processing is completed
+    if ($('.dl-file').hasClass('disabled')) {
+        $('.dl-file').toggleClass('disabled');
+    }
 }
