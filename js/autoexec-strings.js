@@ -25,7 +25,7 @@ function printSection(obj) {
     // console.log(obj);
     for ( opt in obj.opts ) {
         if (obj.opts[opt].enable == true && obj.opts[opt].value != '') {
-            str += obj.opts[opt].opt + ' = ' + obj.opts[opt].value + ';\n'
+            str += obj.opts[opt].opt + ' ' + obj.opts[opt].value + ';\n'
         }
     }
     return str;
